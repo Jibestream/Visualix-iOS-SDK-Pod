@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
 s.name                 = 'Visualix-iOS-SDK-Pod'
-s.version='1.0'
+s.version='8.1.4'
 s.summary              = 'Visualix SDK'
 s.description          = 'This CocoaPod provides the release version for the CXApp Visualix iOS SDK.'
 s.homepage             = 'https://cxapp.com'

@@ -6,7 +6,7 @@
 	<dict>
 		<key>Headers/VisualixFramework-Swift.h</key>
 		<data>
-		4fEChKr72NjNJz0DZaMp+AjvLI4=
+		GJBJvIrT/bmAyN3cuijnSNB2X84=
 		</data>
 		<key>Headers/VisualixFramework.h</key>
 		<data>
@@ -18,31 +18,35 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		dDUopFMO/OTosekuOyZwXwNzL84=
-		</data>
-		<key>Modules/VisualixFramework.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
-		<data>
-		3kA16tdtdviUQ4e0ZvpS8+O5cTM=
-		</data>
-		<key>Modules/VisualixFramework.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
-		<data>
-		s851NxD7Z5qMFFniQLmRB5qXUQ4=
+		aEP9LmXf6WBjL1WQojxUO8eYcko=
 		</data>
 		<key>Modules/VisualixFramework.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		tAcTOT86LIjSmQvocQ/cUtjV2Hs=
+		ptFPWCmdAdO9e7GnUiz7qkuH2s8=
 		</data>
 		<key>Modules/VisualixFramework.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		s851NxD7Z5qMFFniQLmRB5qXUQ4=
+		eQgYrQv/OdTSGgfQUq1gIsyvNcg=
 		</data>
 		<key>Modules/VisualixFramework.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		NRM7EixcK7i1rjMQoun6BZzGObk=
+		NksOLH/D2ns9hsb7hXz3Nn6UWnQ=
+		</data>
+		<key>Modules/VisualixFramework.swiftmodule/x86_64.swiftdoc</key>
+		<data>
+		ptFPWCmdAdO9e7GnUiz7qkuH2s8=
+		</data>
+		<key>Modules/VisualixFramework.swiftmodule/x86_64.swiftinterface</key>
+		<data>
+		eQgYrQv/OdTSGgfQUq1gIsyvNcg=
+		</data>
+		<key>Modules/VisualixFramework.swiftmodule/x86_64.swiftmodule</key>
+		<data>
+		NksOLH/D2ns9hsb7hXz3Nn6UWnQ=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
-		Vk8nC8VGYg/H+/bUvkxCG3fNybY=
+		7W8cfT9v96Y2grNoarEKCm1Kjqs=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -51,7 +55,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			d2kjbBBu3WzHyonFzo6QGp6FJfwUqGbWFRQlZ/V5AHE=
+			sPm74hQ2RpLcEBkWOTJ9APDIO9D+N/rToTSfXT7uxV8=
 			</data>
 		</dict>
 		<key>Headers/VisualixFramework.h</key>
@@ -68,46 +72,53 @@
 			IMrt0vE+1wsMFJkGxcnltrzT/r3Y2704shDrApZ+Wi0=
 			</data>
 		</dict>
-		<key>Modules/VisualixFramework.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			sPQ9T9xlQa6nd1aQ0tZN8xnRM5JUJ30ihv7H0cOqWGQ=
-			</data>
-		</dict>
-		<key>Modules/VisualixFramework.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			8fUfElD7FUXC7/ccR4OL6gEIOCzPHuuOVX9axEbFAjE=
-			</data>
-		</dict>
 		<key>Modules/VisualixFramework.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			EYaYdBgsEycn4YLHEC5DIO1VvIwItrKB962te3+ezhY=
+			ZnGfCxAif/4PpvLXFKsrNuuewXC+7hu4kdPN92cgP44=
 			</data>
 		</dict>
 		<key>Modules/VisualixFramework.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			8fUfElD7FUXC7/ccR4OL6gEIOCzPHuuOVX9axEbFAjE=
+			CBFeg++cu/aY+omBKU1134Cu87CZpQ7Kx+7J7t7rC2M=
 			</data>
 		</dict>
 		<key>Modules/VisualixFramework.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			4kaLpNn9x7UUVT/+qylSwiGfn2qzWAVSvHVzp6EE+3c=
+			dmSJWjCcwE1mNahCFMu6vMyrgezQUddcUNivH4v5HDs=
+			</data>
+		</dict>
+		<key>Modules/VisualixFramework.swiftmodule/x86_64.swiftdoc</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			ZnGfCxAif/4PpvLXFKsrNuuewXC+7hu4kdPN92cgP44=
+			</data>
+		</dict>
+		<key>Modules/VisualixFramework.swiftmodule/x86_64.swiftinterface</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			CBFeg++cu/aY+omBKU1134Cu87CZpQ7Kx+7J7t7rC2M=
+			</data>
+		</dict>
+		<key>Modules/VisualixFramework.swiftmodule/x86_64.swiftmodule</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			dmSJWjCcwE1mNahCFMu6vMyrgezQUddcUNivH4v5HDs=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			wUcEsZOD45AK4iZvTMRmbMtGOqZY6A1KHR32aUVhJww=
+			ZbTXptHWgvLbtec1owIm27mA3AlB4mgg2drDC65ygQ0=
 			</data>
 		</dict>
 	</dict>

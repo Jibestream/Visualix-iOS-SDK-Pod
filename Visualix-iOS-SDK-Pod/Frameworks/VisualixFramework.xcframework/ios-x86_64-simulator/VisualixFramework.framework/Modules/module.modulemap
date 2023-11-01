@@ -6,6 +6,6 @@ framework module VisualixFramework {
 }
 
 module VisualixFramework.Swift {
-  header "VisualixFramework-Swift.h"
-  requires objc
+    header "VisualixFramework-Swift.h"
+    requires objc
 }
