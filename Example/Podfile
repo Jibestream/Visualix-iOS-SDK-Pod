@@ -1,0 +1,6 @@
+use_frameworks!
+target 'Visualix-iOS-SDK-PodTests' do
+  pod 'Visualix-iOS-SDK-Pod', :path => '../'
+  
+  
+end
