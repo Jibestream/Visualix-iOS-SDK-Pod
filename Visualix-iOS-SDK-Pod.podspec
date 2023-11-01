@@ -8,7 +8,7 @@ s.license              = { :type => "MIT", :file => "LICENSE" }
 s.author               = { 'Sonam' => 'sonam.sodani@cxapp.com' }
 s.platform             = :ios, '12.2'
 s.vendored_frameworks    = 'Visualix-iOS-SDK-Pod/Frameworks/*.xcframework'
-s.source               = { :git => 'https://github.com/Jibestream/Visualix-iOS-SDK-Pod/', :tag => '#{s.version}' }
+s.source               = { :git => 'https://github.com/Jibestream/Visualix-iOS-SDK-Pod.git', :tag => '#{s.version}' }
 s.swift_version        = '5'
 end
 
