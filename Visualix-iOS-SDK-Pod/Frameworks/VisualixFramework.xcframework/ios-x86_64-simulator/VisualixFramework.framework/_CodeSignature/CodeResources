@@ -4,9 +4,17 @@
 <dict>
 	<key>files</key>
 	<dict>
+		<key>Assets.scnassets/CameraSetup.scn</key>
+		<data>
+		PTDdksJYfjoJ0wLQVvxvK7gTim0=
+		</data>
+		<key>Assets.scnassets/wireframe_shader.metal</key>
+		<data>
+		0owULy2FEQQwJ9bxuuMVHb3z0fk=
+		</data>
 		<key>Headers/VisualixFramework-Swift.h</key>
 		<data>
-		GJBJvIrT/bmAyN3cuijnSNB2X84=
+		R2FPFMv2JLdQx48Q4vBAQ8Gc47U=
 		</data>
 		<key>Headers/VisualixFramework.h</key>
 		<data>
@@ -18,44 +26,58 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		aEP9LmXf6WBjL1WQojxUO8eYcko=
+		dDUopFMO/OTosekuOyZwXwNzL84=
+		</data>
+		<key>Modules/VisualixFramework.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
+		<data>
+		XDd1QawFNbjr/X4H3AJu7NFiztE=
+		</data>
+		<key>Modules/VisualixFramework.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
+		<data>
+		6OFmitzKqkUUkcgOt9US4on3y+Y=
 		</data>
 		<key>Modules/VisualixFramework.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		ptFPWCmdAdO9e7GnUiz7qkuH2s8=
+		PaWMNYRqCG4okLUpGdN4gmVskQA=
 		</data>
 		<key>Modules/VisualixFramework.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		eQgYrQv/OdTSGgfQUq1gIsyvNcg=
+		6OFmitzKqkUUkcgOt9US4on3y+Y=
 		</data>
 		<key>Modules/VisualixFramework.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		NksOLH/D2ns9hsb7hXz3Nn6UWnQ=
-		</data>
-		<key>Modules/VisualixFramework.swiftmodule/x86_64.swiftdoc</key>
-		<data>
-		ptFPWCmdAdO9e7GnUiz7qkuH2s8=
-		</data>
-		<key>Modules/VisualixFramework.swiftmodule/x86_64.swiftinterface</key>
-		<data>
-		eQgYrQv/OdTSGgfQUq1gIsyvNcg=
-		</data>
-		<key>Modules/VisualixFramework.swiftmodule/x86_64.swiftmodule</key>
-		<data>
-		NksOLH/D2ns9hsb7hXz3Nn6UWnQ=
+		QyIVMgGMDwli/yIpIYyxZ6f3KK0=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
-		7W8cfT9v96Y2grNoarEKCm1Kjqs=
+		Vk8nC8VGYg/H+/bUvkxCG3fNybY=
+		</data>
+		<key>arrow.png</key>
+		<data>
+		wtXlPbCwycbYe1ZhtSLNQhkIp94=
 		</data>
 	</dict>
 	<key>files2</key>
 	<dict>
+		<key>Assets.scnassets/CameraSetup.scn</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			Ic3oahRGtib/yEh76NR0JMZDOqTBdFoHrpDQM1948wI=
+			</data>
+		</dict>
+		<key>Assets.scnassets/wireframe_shader.metal</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			YcywJ2wFdr2JZjOk3US1s9cUV6ifI5nY90MNfNxcENE=
+			</data>
+		</dict>
 		<key>Headers/VisualixFramework-Swift.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			sPm74hQ2RpLcEBkWOTJ9APDIO9D+N/rToTSfXT7uxV8=
+			34+bMIWQ2nqumRMS4OPYfr4lMDlBtA4VnGpNNAyiWTc=
 			</data>
 		</dict>
 		<key>Headers/VisualixFramework.h</key>
@@ -72,53 +94,53 @@
 			IMrt0vE+1wsMFJkGxcnltrzT/r3Y2704shDrApZ+Wi0=
 			</data>
 		</dict>
+		<key>Modules/VisualixFramework.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			v46QTthMDmlysdYum39ArERBXgSBltR9UnfaijNgmdU=
+			</data>
+		</dict>
+		<key>Modules/VisualixFramework.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			GvIzaO+27ZGnDyFkRY8m1y/GWtP2/1D9JpPznmSKpPU=
+			</data>
+		</dict>
 		<key>Modules/VisualixFramework.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			ZnGfCxAif/4PpvLXFKsrNuuewXC+7hu4kdPN92cgP44=
+			u8GQszdOdwBjo7xiJ22CUXTm9uDtKRb9vCWm5Ux6Wz4=
 			</data>
 		</dict>
 		<key>Modules/VisualixFramework.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			CBFeg++cu/aY+omBKU1134Cu87CZpQ7Kx+7J7t7rC2M=
+			GvIzaO+27ZGnDyFkRY8m1y/GWtP2/1D9JpPznmSKpPU=
 			</data>
 		</dict>
 		<key>Modules/VisualixFramework.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			dmSJWjCcwE1mNahCFMu6vMyrgezQUddcUNivH4v5HDs=
-			</data>
-		</dict>
-		<key>Modules/VisualixFramework.swiftmodule/x86_64.swiftdoc</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			ZnGfCxAif/4PpvLXFKsrNuuewXC+7hu4kdPN92cgP44=
-			</data>
-		</dict>
-		<key>Modules/VisualixFramework.swiftmodule/x86_64.swiftinterface</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			CBFeg++cu/aY+omBKU1134Cu87CZpQ7Kx+7J7t7rC2M=
-			</data>
-		</dict>
-		<key>Modules/VisualixFramework.swiftmodule/x86_64.swiftmodule</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			dmSJWjCcwE1mNahCFMu6vMyrgezQUddcUNivH4v5HDs=
+			Qlg5caS2fSrkl9qvDNUI/+4Y7N+7gzfQMNqa7efZYgs=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			ZbTXptHWgvLbtec1owIm27mA3AlB4mgg2drDC65ygQ0=
+			wUcEsZOD45AK4iZvTMRmbMtGOqZY6A1KHR32aUVhJww=
+			</data>
+		</dict>
+		<key>arrow.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			H3SRAa49mSwVS7bFeRRX2m0FgTy0v1FcA4mO0nv0UGI=
 			</data>
 		</dict>
 	</dict>

@@ -1,19 +1,28 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.3.1 (swiftlang-1200.0.41 clang-1200.0.32.8)
+// swift-compiler-version: Apple Swift version 5.8.1 (swiftlang-5.8.0.124.5 clang-1403.0.22.11.100)
 // swift-module-flags: -target arm64-apple-ios12.2 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name VisualixFramework
+// swift-module-flags-ignorable: -enable-bare-slash-regex
 import ARKit
+import CoreImage
+import CoreML
 import Foundation
 import SceneKit
 import Swift
+import UIKit
+import VideoToolbox
+import Vision
 @_exported import VisualixFramework
+import _Concurrency
+import _StringProcessing
 public class ZeroMQSocket {
-  public init(sessionID: Swift.String, mappingEndpoint: Swift.String, queryEndpoint: Swift.String, onError: @escaping ((Swift.Error) -> ()))
+  public init(sessionID: Swift.String, mappingEndpoint: Swift.String, queryEndpoint: Swift.String, onError: @escaping ((_ error: any Swift.Error) -> ()))
   @objc deinit
 }
 @_hasMissingDesignatedInitializers final public class Configuration : Swift.Codable {
   public static var shared: VisualixFramework.Configuration {
     get
   }
+  final public var sendTimestampInMilliSec: Swift.Bool
   public enum Size : Swift.Float, Swift.Codable {
     case x640
     case x800
@@ -22,8 +31,8 @@ public class ZeroMQSocket {
     case x1280
     case x1440
     case x1920
-    public typealias RawValue = Swift.Float
     public init?(rawValue: Swift.Float)
+    public typealias RawValue = Swift.Float
     public var rawValue: Swift.Float {
       get
     }
@@ -31,32 +40,39 @@ public class ZeroMQSocket {
   public struct Rest : Swift.Codable {
     public var address: Swift.String
     public var port: Swift.Int
-    public init(from decoder: Swift.Decoder) throws
-    public func encode(to encoder: Swift.Encoder) throws
+    public func encode(to encoder: any Swift.Encoder) throws
+    public init(from decoder: any Swift.Decoder) throws
   }
   public struct Socket : Swift.Codable {
     public var address: Swift.String
     public var portQuery: Swift.Int
     public var portMap: Swift.Int
-    public init(from decoder: Swift.Decoder) throws
-    public func encode(to encoder: Swift.Encoder) throws
+    public func encode(to encoder: any Swift.Encoder) throws
+    public init(from decoder: any Swift.Decoder) throws
   }
   public struct Speed : Swift.Codable {
     public var localize: Swift.Double
-    public init(from decoder: Swift.Decoder) throws
-    public func encode(to encoder: Swift.Encoder) throws
+    public func encode(to encoder: any Swift.Encoder) throws
+    public init(from decoder: any Swift.Decoder) throws
   }
   public struct Translation : Swift.Codable {
     public var distance: Swift.Float
     public var angle: Swift.Int
-    public init(from decoder: Swift.Decoder) throws
-    public func encode(to encoder: Swift.Encoder) throws
+    public func encode(to encoder: any Swift.Encoder) throws
+    public init(from decoder: any Swift.Decoder) throws
   }
   public struct Frame : Swift.Codable {
     public var size: VisualixFramework.Configuration.Size
     public var rate: Swift.Int
-    public init(from decoder: Swift.Decoder) throws
-    public func encode(to encoder: Swift.Encoder) throws
+    public func encode(to encoder: any Swift.Encoder) throws
+    public init(from decoder: any Swift.Decoder) throws
+  }
+  public struct EncryptionKeys : Swift.Codable {
+    public var serverPublicKey: Swift.String?
+    public var clientPublicKey: Swift.String
+    public var clientSecretKey: Swift.String
+    public func encode(to encoder: any Swift.Encoder) throws
+    public init(from decoder: any Swift.Decoder) throws
   }
   final public var rest: VisualixFramework.Configuration.Rest {
     get
@@ -78,16 +94,20 @@ public class ZeroMQSocket {
     get
     set
   }
+  final public var encryptionKeys: VisualixFramework.Configuration.EncryptionKeys {
+    get
+    set
+  }
   final public func load()
   @objc deinit
-  public init(from decoder: Swift.Decoder) throws
-  final public func encode(to encoder: Swift.Encoder) throws
+  final public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
 }
 @_hasMissingDesignatedInitializers open class ServerStatus : Swift.Codable {
   public var status: Swift.String
   @objc deinit
-  required public init(from decoder: Swift.Decoder) throws
-  open func encode(to encoder: Swift.Encoder) throws
+  open func encode(to encoder: any Swift.Encoder) throws
+  required public init(from decoder: any Swift.Decoder) throws
 }
 open class Item {
   public var id: Swift.String
@@ -103,7 +123,7 @@ open class Vertex {
   public init()
   @objc deinit
 }
-extension SwiftyZeroMQ {
+extension VisualixFramework.SwiftyZeroMQ {
   public struct ZeroMQError : Swift.Error, Swift.CustomStringConvertible {
     public let description: Swift.String
     public static var last: VisualixFramework.SwiftyZeroMQ.ZeroMQError {
@@ -117,7 +137,7 @@ extension SwiftyZeroMQ {
     }
   }
 }
-extension SwiftyZeroMQ {
+extension VisualixFramework.SwiftyZeroMQ {
   public struct PollFlags : Swift.OptionSet {
     public var rawValue: Swift.Int32
     public init(rawValue: Swift.Int32)
@@ -125,8 +145,8 @@ extension SwiftyZeroMQ {
     public static let pollOut: VisualixFramework.SwiftyZeroMQ.PollFlags
     public static let pollErr: VisualixFramework.SwiftyZeroMQ.PollFlags
     public static let none: VisualixFramework.SwiftyZeroMQ.PollFlags
-    public typealias Element = VisualixFramework.SwiftyZeroMQ.PollFlags
     public typealias ArrayLiteralElement = VisualixFramework.SwiftyZeroMQ.PollFlags
+    public typealias Element = VisualixFramework.SwiftyZeroMQ.PollFlags
     public typealias RawValue = Swift.Int32
   }
   public class Poller {
@@ -138,7 +158,7 @@ extension SwiftyZeroMQ {
     @objc deinit
   }
 }
-extension SwiftyZeroMQ {
+extension VisualixFramework.SwiftyZeroMQ {
   public class Socket : Swift.Hashable {
     public var handle: Swift.UnsafeMutableRawPointer?
     public init(context: VisualixFramework.SwiftyZeroMQ.Context, type: VisualixFramework.SwiftyZeroMQ.SocketType) throws
@@ -189,7 +209,7 @@ extension SwiftyZeroMQ {
     public func hash(into hasher: inout Swift.Hasher)
   }
 }
-extension SwiftyZeroMQ {
+extension VisualixFramework.SwiftyZeroMQ {
   public enum SocketType : Swift.Int32 {
     case request
     case reply
@@ -206,13 +226,26 @@ extension SwiftyZeroMQ {
     public var rawValue: Swift.Int32 {
       get
     }
-    public typealias RawValue = Swift.Int32
     public init?(rawValue: Swift.Int32)
+    public typealias RawValue = Swift.Int32
   }
+}
+open class QRCodeContent : Swift.Codable {
+  public var venueId: Swift.String
+  public var waypointId: Swift.String
+  public var heading: Swift.String
+  public var width: Swift.String?
+  required public init(from decoder: any Swift.Decoder) throws
+  @objc deinit
+  open func encode(to encoder: any Swift.Encoder) throws
 }
 @_hasMissingDesignatedInitializers public class Navigation {
   final public var arrow: SceneKit.SCNNode.Type
-  public func Start(from position: SceneKit.SCNVector3, toPointAt index: Swift.Int, in points: [VisualixFramework.Item], basedOn connections: [VisualixFramework.Vertex], onAddNode: @escaping ((SceneKit.SCNNode) -> ()))
+  public var onNavigationStart: (() -> Swift.Void)?
+  public var onNavigationStop: (() -> Swift.Void)?
+  public func performNavigationProcesses(from currentPosition: SceneKit.SCNVector3, to endGoal: SceneKit.SCNVector3, via trajectoryPoints: [SceneKit.SCNNode], withHapticFeedback: Swift.Bool = true) -> [SceneKit.SCNVector3]?
+  public func stopNavigation()
+  public func Start(from position: SceneKit.SCNVector3, toPointAt index: Swift.Int, in points: [VisualixFramework.Item], basedOn connections: [VisualixFramework.Vertex], onAddNode: @escaping ((_ node: SceneKit.SCNNode) -> ()))
   @objc deinit
 }
 @_hasMissingDesignatedInitializers open class MappingInformation : Swift.Codable {
@@ -221,17 +254,17 @@ extension SwiftyZeroMQ {
     public var y: Swift.Float
     public var z: Swift.Float
     @objc deinit
-    required public init(from decoder: Swift.Decoder) throws
-    open func encode(to encoder: Swift.Encoder) throws
+    open func encode(to encoder: any Swift.Encoder) throws
+    required public init(from decoder: any Swift.Decoder) throws
   }
-  open var trajectory: [VisualixFramework.MappingInformation.MappingVector]
+  open var trajectory: [VisualixFramework.MappingInformation.MappingVector]?
   public var T_points2session: Swift.String
   @objc deinit
-  required public init(from decoder: Swift.Decoder) throws
-  open func encode(to encoder: Swift.Encoder) throws
+  open func encode(to encoder: any Swift.Encoder) throws
+  required public init(from decoder: any Swift.Decoder) throws
 }
-@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers final public class Arrow : SceneKit.SCNNode {
-  @objc required dynamic public init?(coder: Foundation.NSCoder)
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) final public class Arrow : SceneKit.SCNNode {
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
   @objc deinit
 }
 public struct SwiftyZeroMQ {
@@ -242,8 +275,8 @@ public struct SwiftyZeroMQ {
     case norm
     case curve
     case gssapi
-    public typealias RawValue = Swift.String
     public init?(rawValue: Swift.String)
+    public typealias RawValue = Swift.String
     public var rawValue: Swift.String {
       get
     }
@@ -257,7 +290,7 @@ public struct SwiftyZeroMQ {
   public static func has(_ capability: VisualixFramework.SwiftyZeroMQ.Capability) -> Swift.Bool
   public static func proxy(frontend: VisualixFramework.SwiftyZeroMQ.Socket, backend: VisualixFramework.SwiftyZeroMQ.Socket, capture: VisualixFramework.SwiftyZeroMQ.Socket? = nil) throws
 }
-extension SwiftyZeroMQ {
+extension VisualixFramework.SwiftyZeroMQ {
   public enum SocketSendRecvOption : Swift.Int32 {
     case none
     case dontWait
@@ -267,16 +300,16 @@ extension SwiftyZeroMQ {
       get
     }
     public func isValidRecvOption() -> Swift.Bool
-    public typealias RawValue = Swift.Int32
     public init?(rawValue: Swift.Int32)
+    public typealias RawValue = Swift.Int32
   }
 }
 @_hasMissingDesignatedInitializers open class Meta : Swift.Codable {
   @_hasMissingDesignatedInitializers open class Content : Swift.Codable {
     public var url: Swift.String
-    required public init(from decoder: Swift.Decoder) throws
     @objc deinit
-    open func encode(to encoder: Swift.Encoder) throws
+    open func encode(to encoder: any Swift.Encoder) throws
+    required public init(from decoder: any Swift.Decoder) throws
   }
   open var type: Swift.String
   open var content: VisualixFramework.Meta.Content
@@ -284,14 +317,14 @@ extension SwiftyZeroMQ {
   open var id: Swift.String
   open var name: Swift.String
   @objc deinit
-  required public init(from decoder: Swift.Decoder) throws
-  open func encode(to encoder: Swift.Encoder) throws
+  open func encode(to encoder: any Swift.Encoder) throws
+  required public init(from decoder: any Swift.Decoder) throws
 }
 @_hasMissingDesignatedInitializers open class TrackingState : Swift.Codable {
   public var state: Swift.String
   @objc deinit
-  required public init(from decoder: Swift.Decoder) throws
-  open func encode(to encoder: Swift.Encoder) throws
+  open func encode(to encoder: any Swift.Encoder) throws
+  required public init(from decoder: any Swift.Decoder) throws
 }
 public struct Exception : Foundation.LocalizedError {
   public struct Request {
@@ -304,11 +337,18 @@ public struct Exception : Foundation.LocalizedError {
     get
   }
 }
-public class Controller {
+@objc @_inheritsConvenienceInitializers public class Controller : ObjectiveC.NSObject {
   public var trajectoryPoints: VisualixFramework.MappingInformation? {
     get
     set
   }
+  public var onEmptyTrajectoryCheck: ((Swift.Bool) -> Swift.Void)?
+  public var onTrajectoryUpdate: (() -> Swift.Void)?
+  public var onTrajectoryTimeout: (() -> Swift.Void)?
+  public var onTrajectoryNil: (() -> Swift.Void)?
+  public var framesSent: Swift.Int
+  public var framesReceived: Swift.Int
+  final public let status: VisualixFramework.Status
   public var serverStatus: VisualixFramework.ServerStatus?
   public var onServerStatusUpdate: (() -> Swift.Void)?
   public var trackingState: VisualixFramework.TrackingState? {
@@ -316,30 +356,48 @@ public class Controller {
     set
   }
   public var onTrackingStateUpdate: (() -> Swift.Void)?
-  public var onTrajectoryUpdate: (() -> Swift.Void)?
-  public var onTrajectoryTimeout: (() -> Swift.Void)?
-  public var onTrajectoryNil: (() -> Swift.Void)?
-  final public var onError: ((Swift.Error) -> Swift.Void)!
-  final public let status: VisualixFramework.Status
   public var metadata: [VisualixFramework.Meta] {
     get
   }
   public var material: [Swift.String : Foundation.Data]
-  final public let navigation: VisualixFramework.Navigation
-  public init(onUpdateOrigin: @escaping ((SceneKit.SCNMatrix4) -> ()), onError: @escaping ((Swift.Error) -> Swift.Void))
+  public var onError: ((any Swift.Error) -> Swift.Void)!
+  public var logErrorCallBack: ((Swift.String) -> ())?
+  public static func getCurveKeys(done: @escaping (((any Swift.Error)?) -> Swift.Void))
+  @objc override dynamic public init()
+  public init(onUpdateOrigin: @escaping ((_ transform: SceneKit.SCNMatrix4) -> ()), onError: @escaping ((any Swift.Error) -> Swift.Void))
   @objc deinit
+  public func enableBarcodeLocalization(onview: ARKit.ARSCNView?)
   public func Update(didUpdate: ARKit.ARFrame, translationBased: Swift.Bool, position: SceneKit.SCNVector3, angleInfo: simd.simd_float3)
-  public func Disconnect()
-  public func upload(_ content: Foundation.Data, _ done: (() -> Swift.Void)?)
-  public func downloadMeta(_ done: ((Swift.Bool) -> Swift.Void)?)
-  public func downloadContent(result: @escaping ((Foundation.Data) -> Swift.Void))
+  public func addCorrectionOffset(offset: SceneKit.SCNVector3)
+  public func upload(mapName: Swift.String, _ content: Foundation.Data, _ done: (() -> Swift.Void)?)
+  public func downloadMeta(_ done: ((_ updatedContent: Swift.Bool) -> Swift.Void)?)
+  public func saveMap(mapName: Swift.String, done: @escaping (() -> Swift.Void))
+  public func loadMap(mapName: Swift.String)
+  public func getSavedMaps(result: @escaping ((Foundation.Data) -> Swift.Void))
+  public func deleteMap(mapName: Swift.String, done: @escaping (() -> Swift.Void))
+  public func downloadContent(mapName: Swift.String, result: @escaping ((Foundation.Data) -> Swift.Void))
+  public func renameMap(newMapName: Swift.String, oldMapName: Swift.String, done: @escaping ((Foundation.Data) -> Swift.Void))
+  public func renameInfoPoints(newMapName: Swift.String, oldMapName: Swift.String, result: @escaping ((Foundation.Data) -> Swift.Void))
   public func triggerLocalisation()
   public func triggerMappingReset()
-  public func getTrajectory(start: Swift.Int = 0, end: Swift.Int = 0)
+  public func getTrajectory(start: Swift.Int = 0, end: Swift.Int = 0, completion: @escaping (VisualixFramework.MappingInformation) -> Swift.Void)
+  public func checkIfTrajectoryEmpty()
   public func getTrackingState()
   public func getServerStatus()
+  public func correctOriginPositionalInformation(currentOriginPosition: SceneKit.SCNVector3, currentOriginAngle: simd.simd_float3)
+  public func Disconnect()
 }
-extension SwiftyZeroMQ {
+extension VisualixFramework.Controller : ARKit.ARSCNViewDelegate {
+  @objc dynamic public func renderer(_ renderer: any SceneKit.SCNSceneRenderer, didAdd node: SceneKit.SCNNode, for anchor: ARKit.ARAnchor)
+  @objc dynamic public func renderer(_ renderer: any SceneKit.SCNSceneRenderer, didUpdate node: SceneKit.SCNNode, for anchor: ARKit.ARAnchor)
+}
+@_hasMissingDesignatedInitializers open class BrunoPubKey : Swift.Codable {
+  public var pub_key: Swift.String
+  @objc deinit
+  open func encode(to encoder: any Swift.Encoder) throws
+  required public init(from decoder: any Swift.Decoder) throws
+}
+extension VisualixFramework.SwiftyZeroMQ {
   public class Context : Swift.Hashable {
     public var handle: Swift.UnsafeMutableRawPointer?
     public init() throws
@@ -372,16 +430,17 @@ extension SwiftyZeroMQ {
   public enum Mode {
     case off, download, localize, on, navigate, map
     public static func == (a: VisualixFramework.Status.Mode, b: VisualixFramework.Status.Mode) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
     public var hashValue: Swift.Int {
       get
     }
-    public func hash(into hasher: inout Swift.Hasher)
   }
   final public var mode: VisualixFramework.Status.Mode {
     get
     set
   }
   final public var onModeChanged: [((VisualixFramework.Status.Mode, VisualixFramework.Status.Mode) -> Swift.Void)]
+  final public func disconnect()
   @objc deinit
 }
 extension VisualixFramework.Configuration.Size : Swift.Equatable {}
