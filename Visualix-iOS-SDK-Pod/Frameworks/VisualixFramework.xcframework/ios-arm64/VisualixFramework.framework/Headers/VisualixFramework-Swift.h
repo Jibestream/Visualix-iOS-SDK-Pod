@@ -312,6 +312,8 @@ SWIFT_CLASS("_TtC17VisualixFramework10Controller")
 
 
 
+
+
 #endif
 #if defined(__cplusplus)
 #endif

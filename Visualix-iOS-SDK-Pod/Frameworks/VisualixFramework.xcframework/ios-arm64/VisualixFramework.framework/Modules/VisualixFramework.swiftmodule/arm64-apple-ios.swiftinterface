@@ -230,11 +230,55 @@ extension VisualixFramework.SwiftyZeroMQ {
     public typealias RawValue = Swift.Int32
   }
 }
+public struct Graph : Swift.Codable {
+  public var userMappingDirection: Swift.Float?
+  public var items: [VisualixFramework.GraphItem]
+  public var relativeOrigin: CoreFoundation.CGPoint?
+  public var selectedFloorName: Swift.String?
+  public var originRotationAngle: Swift.Float?
+  public var layers: [VisualixFramework.Layer]
+  public init(userMappingDirection: Swift.Float? = nil, relativeOrigin: CoreFoundation.CGPoint? = nil, selectedFloorName: Swift.String? = nil, originRotationAngle: Swift.Float? = nil)
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct GraphItem : Swift.Codable {
+  public var x: Swift.Float, y: Swift.Float, z: Swift.Float
+  public var rotation: VisualixFramework.Rotation?
+  public var id: Swift.String, platform: Swift.String, name: Swift.String
+  public var isAmenity: Swift.Bool
+  public var displayMode: Swift.Int?
+  public var image: Swift.String?
+  public var extensor: [Swift.String : Swift.String]?
+  public init(x: Swift.Float = 0, y: Swift.Float = 0, z: Swift.Float = 0, rotation: VisualixFramework.Rotation? = nil, id: Swift.String, platform: Swift.String, name: Swift.String, isAmenity: Swift.Bool, displayMode: Swift.Int = 1, image: Swift.String? = nil, extensor: [Swift.String : Swift.String]? = nil)
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct Rotation : Swift.Codable {
+  public let w: Swift.Float, x: Swift.Float, y: Swift.Float, z: Swift.Float
+  public init(w: Swift.Float, x: Swift.Float, y: Swift.Float, z: Swift.Float)
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct Layer : Swift.Codable {
+  public var positions: [VisualixFramework.Position]
+  public var color: Swift.String
+  public var name: Swift.String
+  public init(positions: [VisualixFramework.Position], color: Swift.String, name: Swift.String)
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct Position : Swift.Codable {
+  public var x: Swift.Float, y: Swift.Float, z: Swift.Float
+  public init(x: Swift.Float, y: Swift.Float, z: Swift.Float)
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
 open class QRCodeContent : Swift.Codable {
   public var venueId: Swift.String
   public var waypointId: Swift.String
   public var heading: Swift.String
   public var width: Swift.String?
+  public init(venueId: Swift.String, waypointId: Swift.String, heading: Swift.String, width: Swift.String?)
   required public init(from decoder: any Swift.Decoder) throws
   @objc deinit
   open func encode(to encoder: any Swift.Encoder) throws
@@ -266,6 +310,35 @@ open class QRCodeContent : Swift.Codable {
 @objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) final public class Arrow : SceneKit.SCNNode {
   @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
   @objc deinit
+}
+public enum APIAction : Swift.String {
+  case uploadContent
+  case downloadMeta
+  case saveMap
+  case loadMap
+  case getSavedMaps
+  case deleteMap
+  case downloadGraphContent
+  case renameMap
+  case renameInfoPoints
+  case triggerLocalisation
+  case triggerMappingReset
+  case getTrajectory
+  case getTrackingState
+  case getServerStatus
+  case initializeZeroMQ
+  case getCurveKeys
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public struct VXError : Swift.Error {
+  public let action: VisualixFramework.APIAction
+  public let errorCode: Swift.Int?
+  public let message: Swift.String?
+  public let data: [Swift.String : Any]?
 }
 public struct SwiftyZeroMQ {
   public enum Capability : Swift.String {
@@ -360,13 +433,16 @@ public struct Exception : Foundation.LocalizedError {
     get
   }
   public var material: [Swift.String : Foundation.Data]
-  public var onError: ((any Swift.Error) -> Swift.Void)!
+  public var onError: ((VisualixFramework.VXError) -> Swift.Void)!
+  public var onQRScanned: ((VisualixFramework.QRCodeContent, Swift.Bool) -> Swift.Void)?
   public var logErrorCallBack: ((Swift.String) -> ())?
-  public static func getCurveKeys(done: @escaping (((any Swift.Error)?) -> Swift.Void))
+  public static func getCurveKeys(done: @escaping ((VisualixFramework.VXError?) -> Swift.Void))
   @objc override dynamic public init()
-  public init(onUpdateOrigin: @escaping ((_ transform: SceneKit.SCNMatrix4) -> ()), onError: @escaping ((any Swift.Error) -> Swift.Void))
+  public init(onUpdateOrigin: @escaping ((_ transform: SceneKit.SCNMatrix4) -> ()), onError: @escaping ((VisualixFramework.VXError) -> Swift.Void))
   @objc deinit
+  public func onUpdateOrigin(_ transform: SceneKit.SCNMatrix4)
   public func enableBarcodeLocalization(onview: ARKit.ARSCNView?)
+  public func enableWallRelocalization(enabled: Swift.Bool)
   public func Update(didUpdate: ARKit.ARFrame, translationBased: Swift.Bool, position: SceneKit.SCNVector3, angleInfo: simd.simd_float3)
   public func addCorrectionOffset(offset: SceneKit.SCNVector3)
   public func upload(mapName: Swift.String, _ content: Foundation.Data, _ done: (() -> Swift.Void)?)
@@ -375,7 +451,7 @@ public struct Exception : Foundation.LocalizedError {
   public func loadMap(mapName: Swift.String)
   public func getSavedMaps(result: @escaping ((Foundation.Data) -> Swift.Void))
   public func deleteMap(mapName: Swift.String, done: @escaping (() -> Swift.Void))
-  public func downloadContent(mapName: Swift.String, result: @escaping ((Foundation.Data) -> Swift.Void))
+  public func downloadGraphContent(mapName: Swift.String, result: @escaping (Swift.Result<VisualixFramework.Graph, VisualixFramework.VXError>) -> Swift.Void)
   public func renameMap(newMapName: Swift.String, oldMapName: Swift.String, done: @escaping ((Foundation.Data) -> Swift.Void))
   public func renameInfoPoints(newMapName: Swift.String, oldMapName: Swift.String, result: @escaping ((Foundation.Data) -> Swift.Void))
   public func triggerLocalisation()
@@ -387,9 +463,16 @@ public struct Exception : Foundation.LocalizedError {
   public func correctOriginPositionalInformation(currentOriginPosition: SceneKit.SCNVector3, currentOriginAngle: simd.simd_float3)
   public func Disconnect()
 }
+extension VisualixFramework.Controller {
+  public func convertToTransform(source point: CoreFoundation.CGPoint, facing heading: Swift.Float?, offset disttoqr: Swift.Float?) -> SceneKit.SCNMatrix4
+}
 extension VisualixFramework.Controller : ARKit.ARSCNViewDelegate {
   @objc dynamic public func renderer(_ renderer: any SceneKit.SCNSceneRenderer, didAdd node: SceneKit.SCNNode, for anchor: ARKit.ARAnchor)
   @objc dynamic public func renderer(_ renderer: any SceneKit.SCNSceneRenderer, didUpdate node: SceneKit.SCNNode, for anchor: ARKit.ARAnchor)
+}
+extension CoreFoundation.CGPoint {
+  public func offset(byDistance distance: CoreFoundation.CGFloat, inDirection radians: CoreFoundation.CGFloat) -> CoreFoundation.CGPoint
+  public static func + (lhs: CoreFoundation.CGPoint, rhs: CoreFoundation.CGPoint) -> CoreFoundation.CGPoint
 }
 @_hasMissingDesignatedInitializers open class BrunoPubKey : Swift.Codable {
   public var pub_key: Swift.String
@@ -449,6 +532,9 @@ extension VisualixFramework.Configuration.Size : Swift.RawRepresentable {}
 extension VisualixFramework.SwiftyZeroMQ.SocketType : Swift.Equatable {}
 extension VisualixFramework.SwiftyZeroMQ.SocketType : Swift.Hashable {}
 extension VisualixFramework.SwiftyZeroMQ.SocketType : Swift.RawRepresentable {}
+extension VisualixFramework.APIAction : Swift.Equatable {}
+extension VisualixFramework.APIAction : Swift.Hashable {}
+extension VisualixFramework.APIAction : Swift.RawRepresentable {}
 extension VisualixFramework.SwiftyZeroMQ.Capability : Swift.Equatable {}
 extension VisualixFramework.SwiftyZeroMQ.Capability : Swift.Hashable {}
 extension VisualixFramework.SwiftyZeroMQ.Capability : Swift.RawRepresentable {}
