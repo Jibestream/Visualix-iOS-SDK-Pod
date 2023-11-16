@@ -301,6 +301,7 @@ SWIFT_CLASS("_TtC17VisualixFramework10Controller")
 
 
 
+
 @protocol SCNSceneRenderer;
 @class ARAnchor;
 

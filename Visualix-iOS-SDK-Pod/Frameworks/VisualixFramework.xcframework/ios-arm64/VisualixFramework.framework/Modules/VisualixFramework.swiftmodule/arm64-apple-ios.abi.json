@@ -15501,6 +15501,30 @@
       },
       {
         "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "VisualixFramework",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Vision",
+        "printedName": "Vision",
+        "declKind": "Import",
+        "moduleName": "VisualixFramework"
+      },
+      {
+        "kind": "Import",
+        "name": "CoreImage",
+        "printedName": "CoreImage",
+        "declKind": "Import",
+        "moduleName": "VisualixFramework"
+      },
+      {
+        "kind": "Import",
         "name": "ARKit",
         "printedName": "ARKit",
         "declKind": "Import",
@@ -16366,6 +16390,153 @@
                 "moduleName": "VisualixFramework",
                 "implicit": true,
                 "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "extensorTextKey",
+            "printedName": "extensorTextKey",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:17VisualixFramework10ControllerC15extensorTextKeySSvp",
+            "mangledName": "$s17VisualixFramework10ControllerC15extensorTextKeySSvp",
+            "moduleName": "VisualixFramework",
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:17VisualixFramework10ControllerC15extensorTextKeySSvg",
+                "mangledName": "$s17VisualixFramework10ControllerC15extensorTextKeySSvg",
+                "moduleName": "VisualixFramework",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "extensorHeadingKey",
+            "printedName": "extensorHeadingKey",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:17VisualixFramework10ControllerC18extensorHeadingKeySSvp",
+            "mangledName": "$s17VisualixFramework10ControllerC18extensorHeadingKeySSvp",
+            "moduleName": "VisualixFramework",
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:17VisualixFramework10ControllerC18extensorHeadingKeySSvg",
+                "mangledName": "$s17VisualixFramework10ControllerC18extensorHeadingKeySSvg",
+                "moduleName": "VisualixFramework",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "extensorTextWidth",
+            "printedName": "extensorTextWidth",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:17VisualixFramework10ControllerC17extensorTextWidthSSvp",
+            "mangledName": "$s17VisualixFramework10ControllerC17extensorTextWidthSSvp",
+            "moduleName": "VisualixFramework",
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:17VisualixFramework10ControllerC17extensorTextWidthSSvg",
+                "mangledName": "$s17VisualixFramework10ControllerC17extensorTextWidthSSvg",
+                "moduleName": "VisualixFramework",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
               }
             ]
           },
@@ -17804,6 +17975,32 @@
             "declKind": "Func",
             "usr": "s:17VisualixFramework10ControllerC24enableWallRelocalization7enabledySb_tF",
             "mangledName": "$s17VisualixFramework10ControllerC24enableWallRelocalization7enabledySb_tF",
+            "moduleName": "VisualixFramework",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "enableTextLocalization",
+            "printedName": "enableTextLocalization(enabled:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:17VisualixFramework10ControllerC22enableTextLocalization7enabledySb_tF",
+            "mangledName": "$s17VisualixFramework10ControllerC22enableTextLocalization7enabledySb_tF",
             "moduleName": "VisualixFramework",
             "declAttributes": [
               "AccessControl"
@@ -22109,6 +22306,258 @@
       "value": "\"Unknown error.\""
     },
     {
+      "filePath": "\/Users\/sonam.sodani\/Documents\/GitHub-CXApp\/iOS\/visualix-ios\/VisualixFramework\/TextDetector.swift",
+      "kind": "FloatLiteral",
+      "offset": 484,
+      "length": 3,
+      "value": "0.1"
+    },
+    {
+      "filePath": "\/Users\/sonam.sodani\/Documents\/GitHub-CXApp\/iOS\/visualix-ios\/VisualixFramework\/TextDetector.swift",
+      "kind": "BooleanLiteral",
+      "offset": 540,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/sonam.sodani\/Documents\/GitHub-CXApp\/iOS\/visualix-ios\/VisualixFramework\/TextDetector.swift",
+      "kind": "FloatLiteral",
+      "offset": 633,
+      "length": 4,
+      "value": "0.33"
+    },
+    {
+      "filePath": "\/Users\/sonam.sodani\/Documents\/GitHub-CXApp\/iOS\/visualix-ios\/VisualixFramework\/TextDetector.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1406,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/sonam.sodani\/Documents\/GitHub-CXApp\/iOS\/visualix-ios\/VisualixFramework\/TextDetector.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2379,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/sonam.sodani\/Documents\/GitHub-CXApp\/iOS\/visualix-ios\/VisualixFramework\/TextDetector.swift",
+      "kind": "StringLiteral",
+      "offset": 2541,
+      "length": 58,
+      "value": "\"Error: Barcode detection failed - vision request failed.\""
+    },
+    {
+      "filePath": "\/Users\/sonam.sodani\/Documents\/GitHub-CXApp\/iOS\/visualix-ios\/VisualixFramework\/TextDetector.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2631,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/sonam.sodani\/Documents\/GitHub-CXApp\/iOS\/visualix-ios\/VisualixFramework\/TextDetector.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2932,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/sonam.sodani\/Documents\/GitHub-CXApp\/iOS\/visualix-ios\/VisualixFramework\/TextDetector.swift",
+      "kind": "StringLiteral",
+      "offset": 3242,
+      "length": 96,
+      "value": "\"Error: Text detection failed - Vision request returned an error. \""
+    },
+    {
+      "filePath": "\/Users\/sonam.sodani\/Documents\/GitHub-CXApp\/iOS\/visualix-ios\/VisualixFramework\/TextDetector.swift",
+      "kind": "StringLiteral",
+      "offset": 3337,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/sonam.sodani\/Documents\/GitHub-CXApp\/iOS\/visualix-ios\/VisualixFramework\/TextDetector.swift",
+      "kind": "StringLiteral",
+      "offset": 3411,
+      "length": 25,
+      "value": "\"CIPerspectiveCorrection\""
+    },
+    {
+      "filePath": "\/Users\/sonam.sodani\/Documents\/GitHub-CXApp\/iOS\/visualix-ios\/VisualixFramework\/TextDetector.swift",
+      "kind": "StringLiteral",
+      "offset": 3463,
+      "length": 80,
+      "value": "\"Error: Text detection failed - Could not create perspective correction filter.\""
+    },
+    {
+      "filePath": "\/Users\/sonam.sodani\/Documents\/GitHub-CXApp\/iOS\/visualix-ios\/VisualixFramework\/TextDetector.swift",
+      "kind": "Array",
+      "offset": 3681,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/sonam.sodani\/Documents\/GitHub-CXApp\/iOS\/visualix-ios\/VisualixFramework\/TextDetector.swift",
+      "kind": "IntegerLiteral",
+      "offset": 4100,
+      "length": 1,
+      "value": "5"
+    },
+    {
+      "filePath": "\/Users\/sonam.sodani\/Documents\/GitHub-CXApp\/iOS\/visualix-ios\/VisualixFramework\/TextDetector.swift",
+      "kind": "FloatLiteral",
+      "offset": 4151,
+      "length": 3,
+      "value": "0.6"
+    },
+    {
+      "filePath": "\/Users\/sonam.sodani\/Documents\/GitHub-CXApp\/iOS\/visualix-ios\/VisualixFramework\/TextDetector.swift",
+      "kind": "IntegerLiteral",
+      "offset": 5832,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/sonam.sodani\/Documents\/GitHub-CXApp\/iOS\/visualix-ios\/VisualixFramework\/TextDetector.swift",
+      "kind": "IntegerLiteral",
+      "offset": 5847,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/sonam.sodani\/Documents\/GitHub-CXApp\/iOS\/visualix-ios\/VisualixFramework\/TextDetector.swift",
+      "kind": "StringLiteral",
+      "offset": 5881,
+      "length": 101,
+      "value": "\"Got things backwards: \""
+    },
+    {
+      "filePath": "\/Users\/sonam.sodani\/Documents\/GitHub-CXApp\/iOS\/visualix-ios\/VisualixFramework\/TextDetector.swift",
+      "kind": "StringLiteral",
+      "offset": 5913,
+      "length": 1,
+      "value": "\", \""
+    },
+    {
+      "filePath": "\/Users\/sonam.sodani\/Documents\/GitHub-CXApp\/iOS\/visualix-ios\/VisualixFramework\/TextDetector.swift",
+      "kind": "StringLiteral",
+      "offset": 5925,
+      "length": 1,
+      "value": "\", \""
+    },
+    {
+      "filePath": "\/Users\/sonam.sodani\/Documents\/GitHub-CXApp\/iOS\/visualix-ios\/VisualixFramework\/TextDetector.swift",
+      "kind": "StringLiteral",
+      "offset": 5937,
+      "length": 1,
+      "value": "\", \""
+    },
+    {
+      "filePath": "\/Users\/sonam.sodani\/Documents\/GitHub-CXApp\/iOS\/visualix-ios\/VisualixFramework\/TextDetector.swift",
+      "kind": "StringLiteral",
+      "offset": 5950,
+      "length": 1,
+      "value": "\", \""
+    },
+    {
+      "filePath": "\/Users\/sonam.sodani\/Documents\/GitHub-CXApp\/iOS\/visualix-ios\/VisualixFramework\/TextDetector.swift",
+      "kind": "StringLiteral",
+      "offset": 5965,
+      "length": 1,
+      "value": "\", \""
+    },
+    {
+      "filePath": "\/Users\/sonam.sodani\/Documents\/GitHub-CXApp\/iOS\/visualix-ios\/VisualixFramework\/TextDetector.swift",
+      "kind": "StringLiteral",
+      "offset": 5981,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/sonam.sodani\/Documents\/GitHub-CXApp\/iOS\/visualix-ios\/VisualixFramework\/TextDetector.swift",
+      "kind": "IntegerLiteral",
+      "offset": 6186,
+      "length": 1,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/sonam.sodani\/Documents\/GitHub-CXApp\/iOS\/visualix-ios\/VisualixFramework\/TextDetector.swift",
+      "kind": "IntegerLiteral",
+      "offset": 6228,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/sonam.sodani\/Documents\/GitHub-CXApp\/iOS\/visualix-ios\/VisualixFramework\/TextDetector.swift",
+      "kind": "IntegerLiteral",
+      "offset": 6354,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/sonam.sodani\/Documents\/GitHub-CXApp\/iOS\/visualix-ios\/VisualixFramework\/TextDetector.swift",
+      "kind": "IntegerLiteral",
+      "offset": 6648,
+      "length": 1,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/sonam.sodani\/Documents\/GitHub-CXApp\/iOS\/visualix-ios\/VisualixFramework\/TextDetector.swift",
+      "kind": "IntegerLiteral",
+      "offset": 6690,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/sonam.sodani\/Documents\/GitHub-CXApp\/iOS\/visualix-ios\/VisualixFramework\/TextDetector.swift",
+      "kind": "IntegerLiteral",
+      "offset": 6749,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/sonam.sodani\/Documents\/GitHub-CXApp\/iOS\/visualix-ios\/VisualixFramework\/TextDetector.swift",
+      "kind": "StringLiteral",
+      "offset": 7076,
+      "length": 14,
+      "value": "\"inputTopLeft\""
+    },
+    {
+      "filePath": "\/Users\/sonam.sodani\/Documents\/GitHub-CXApp\/iOS\/visualix-ios\/VisualixFramework\/TextDetector.swift",
+      "kind": "StringLiteral",
+      "offset": 7165,
+      "length": 15,
+      "value": "\"inputTopRight\""
+    },
+    {
+      "filePath": "\/Users\/sonam.sodani\/Documents\/GitHub-CXApp\/iOS\/visualix-ios\/VisualixFramework\/TextDetector.swift",
+      "kind": "StringLiteral",
+      "offset": 7257,
+      "length": 17,
+      "value": "\"inputBottomLeft\""
+    },
+    {
+      "filePath": "\/Users\/sonam.sodani\/Documents\/GitHub-CXApp\/iOS\/visualix-ios\/VisualixFramework\/TextDetector.swift",
+      "kind": "StringLiteral",
+      "offset": 7352,
+      "length": 18,
+      "value": "\"inputBottomRight\""
+    },
+    {
+      "filePath": "\/Users\/sonam.sodani\/Documents\/GitHub-CXApp\/iOS\/visualix-ios\/VisualixFramework\/TextDetector.swift",
+      "kind": "StringLiteral",
+      "offset": 7763,
+      "length": 87,
+      "value": "\"Error: Text\/ocr detection failed - perspective correction filter has no output image.\""
+    },
+    {
+      "filePath": "\/Users\/sonam.sodani\/Documents\/GitHub-CXApp\/iOS\/visualix-ios\/VisualixFramework\/TextDetector.swift",
+      "kind": "Array",
+      "offset": 8150,
+      "length": 2,
+      "value": "[]"
+    },
+    {
       "filePath": "\/Users\/sonam.sodani\/Documents\/GitHub-CXApp\/iOS\/visualix-ios\/VisualixFramework\/BarcodeDetector.swift",
       "kind": "FloatLiteral",
       "offset": 496,
@@ -22257,2367 +22706,2591 @@
     },
     {
       "filePath": "\/Users\/sonam.sodani\/Documents\/GitHub-CXApp\/iOS\/visualix-ios\/VisualixFramework\/Controller.swift",
+      "kind": "StringLiteral",
+      "offset": 912,
+      "length": 10,
+      "value": "\"QR Label\""
+    },
+    {
+      "filePath": "\/Users\/sonam.sodani\/Documents\/GitHub-CXApp\/iOS\/visualix-ios\/VisualixFramework\/Controller.swift",
+      "kind": "StringLiteral",
+      "offset": 959,
+      "length": 12,
+      "value": "\"QR Heading\""
+    },
+    {
+      "filePath": "\/Users\/sonam.sodani\/Documents\/GitHub-CXApp\/iOS\/visualix-ios\/VisualixFramework\/Controller.swift",
+      "kind": "StringLiteral",
+      "offset": 1007,
+      "length": 16,
+      "value": "\"QR Label Width\""
+    },
+    {
+      "filePath": "\/Users\/sonam.sodani\/Documents\/GitHub-CXApp\/iOS\/visualix-ios\/VisualixFramework\/Controller.swift",
       "kind": "IntegerLiteral",
-      "offset": 961,
+      "offset": 1107,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/sonam.sodani\/Documents\/GitHub-CXApp\/iOS\/visualix-ios\/VisualixFramework\/Controller.swift",
       "kind": "IntegerLiteral",
-      "offset": 1020,
+      "offset": 1166,
       "length": 1,
       "value": "8"
     },
     {
       "filePath": "\/Users\/sonam.sodani\/Documents\/GitHub-CXApp\/iOS\/visualix-ios\/VisualixFramework\/Controller.swift",
       "kind": "BooleanLiteral",
-      "offset": 1541,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/sonam.sodani\/Documents\/GitHub-CXApp\/iOS\/visualix-ios\/VisualixFramework\/Controller.swift",
-      "kind": "BooleanLiteral",
-      "offset": 1614,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/sonam.sodani\/Documents\/GitHub-CXApp\/iOS\/visualix-ios\/VisualixFramework\/Controller.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1947,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/sonam.sodani\/Documents\/GitHub-CXApp\/iOS\/visualix-ios\/VisualixFramework\/Controller.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1994,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/sonam.sodani\/Documents\/GitHub-CXApp\/iOS\/visualix-ios\/VisualixFramework\/Controller.swift",
-      "kind": "BooleanLiteral",
-      "offset": 2363,
+      "offset": 1736,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/sonam.sodani\/Documents\/GitHub-CXApp\/iOS\/visualix-ios\/VisualixFramework\/Controller.swift",
       "kind": "FloatLiteral",
-      "offset": 2413,
+      "offset": 1789,
       "length": 3,
       "value": "0.0"
     },
     {
       "filePath": "\/Users\/sonam.sodani\/Documents\/GitHub-CXApp\/iOS\/visualix-ios\/VisualixFramework\/Controller.swift",
       "kind": "IntegerLiteral",
-      "offset": 2453,
+      "offset": 1832,
       "length": 3,
       "value": "360"
     },
     {
       "filePath": "\/Users\/sonam.sodani\/Documents\/GitHub-CXApp\/iOS\/visualix-ios\/VisualixFramework\/Controller.swift",
       "kind": "FloatLiteral",
-      "offset": 2807,
+      "offset": 2200,
       "length": 3,
       "value": "5.0"
     },
     {
       "filePath": "\/Users\/sonam.sodani\/Documents\/GitHub-CXApp\/iOS\/visualix-ios\/VisualixFramework\/Controller.swift",
       "kind": "FloatLiteral",
-      "offset": 2857,
+      "offset": 2253,
       "length": 4,
       "value": "60.0"
     },
     {
       "filePath": "\/Users\/sonam.sodani\/Documents\/GitHub-CXApp\/iOS\/visualix-ios\/VisualixFramework\/Controller.swift",
       "kind": "IntegerLiteral",
-      "offset": 3012,
+      "offset": 2411,
       "length": 1,
       "value": "5"
     },
     {
       "filePath": "\/Users\/sonam.sodani\/Documents\/GitHub-CXApp\/iOS\/visualix-ios\/VisualixFramework\/Controller.swift",
       "kind": "IntegerLiteral",
-      "offset": 3074,
+      "offset": 2476,
       "length": 1,
       "value": "3"
     },
     {
       "filePath": "\/Users\/sonam.sodani\/Documents\/GitHub-CXApp\/iOS\/visualix-ios\/VisualixFramework\/Controller.swift",
       "kind": "IntegerLiteral",
-      "offset": 3139,
+      "offset": 2544,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/sonam.sodani\/Documents\/GitHub-CXApp\/iOS\/visualix-ios\/VisualixFramework\/Controller.swift",
       "kind": "FloatLiteral",
-      "offset": 3206,
+      "offset": 2614,
       "length": 3,
       "value": "0.1"
     },
     {
       "filePath": "\/Users\/sonam.sodani\/Documents\/GitHub-CXApp\/iOS\/visualix-ios\/VisualixFramework\/Controller.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2707,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/sonam.sodani\/Documents\/GitHub-CXApp\/iOS\/visualix-ios\/VisualixFramework\/Controller.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2778,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/sonam.sodani\/Documents\/GitHub-CXApp\/iOS\/visualix-ios\/VisualixFramework\/Controller.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2850,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/sonam.sodani\/Documents\/GitHub-CXApp\/iOS\/visualix-ios\/VisualixFramework\/Controller.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3281,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/sonam.sodani\/Documents\/GitHub-CXApp\/iOS\/visualix-ios\/VisualixFramework\/Controller.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3328,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/sonam.sodani\/Documents\/GitHub-CXApp\/iOS\/visualix-ios\/VisualixFramework\/Controller.swift",
       "kind": "Array",
-      "offset": 3297,
+      "offset": 3699,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/sonam.sodani\/Documents\/GitHub-CXApp\/iOS\/visualix-ios\/VisualixFramework\/Controller.swift",
       "kind": "StringLiteral",
-      "offset": 3332,
+      "offset": 3734,
       "length": 7,
       "value": "\"Walls\""
     },
     {
       "filePath": "\/Users\/sonam.sodani\/Documents\/GitHub-CXApp\/iOS\/visualix-ios\/VisualixFramework\/Controller.swift",
       "kind": "FloatLiteral",
-      "offset": 3426,
+      "offset": 3828,
       "length": 3,
       "value": "1.0"
     },
     {
       "filePath": "\/Users\/sonam.sodani\/Documents\/GitHub-CXApp\/iOS\/visualix-ios\/VisualixFramework\/Controller.swift",
       "kind": "IntegerLiteral",
-      "offset": 3491,
+      "offset": 3893,
       "length": 2,
       "value": "30"
     },
     {
       "filePath": "\/Users\/sonam.sodani\/Documents\/GitHub-CXApp\/iOS\/visualix-ios\/VisualixFramework\/Controller.swift",
       "kind": "IntegerLiteral",
-      "offset": 3549,
+      "offset": 3951,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/sonam.sodani\/Documents\/GitHub-CXApp\/iOS\/visualix-ios\/VisualixFramework\/Controller.swift",
       "kind": "IntegerLiteral",
-      "offset": 3610,
+      "offset": 4012,
       "length": 1,
       "value": "5"
     },
     {
       "filePath": "\/Users\/sonam.sodani\/Documents\/GitHub-CXApp\/iOS\/visualix-ios\/VisualixFramework\/Controller.swift",
       "kind": "IntegerLiteral",
-      "offset": 3693,
+      "offset": 4095,
       "length": 2,
       "value": "10"
     },
     {
       "filePath": "\/Users\/sonam.sodani\/Documents\/GitHub-CXApp\/iOS\/visualix-ios\/VisualixFramework\/Controller.swift",
       "kind": "FloatLiteral",
-      "offset": 3771,
+      "offset": 4173,
       "length": 4,
       "value": "0.90"
     },
     {
       "filePath": "\/Users\/sonam.sodani\/Documents\/GitHub-CXApp\/iOS\/visualix-ios\/VisualixFramework\/Controller.swift",
       "kind": "IntegerLiteral",
-      "offset": 3889,
+      "offset": 4291,
       "length": 2,
       "value": "10"
     },
     {
       "filePath": "\/Users\/sonam.sodani\/Documents\/GitHub-CXApp\/iOS\/visualix-ios\/VisualixFramework\/Controller.swift",
       "kind": "IntegerLiteral",
-      "offset": 4122,
+      "offset": 4524,
       "length": 3,
       "value": "-40"
     },
     {
       "filePath": "\/Users\/sonam.sodani\/Documents\/GitHub-CXApp\/iOS\/visualix-ios\/VisualixFramework\/Controller.swift",
       "kind": "IntegerLiteral",
-      "offset": 4173,
+      "offset": 4575,
       "length": 1,
       "value": "3"
     },
     {
       "filePath": "\/Users\/sonam.sodani\/Documents\/GitHub-CXApp\/iOS\/visualix-ios\/VisualixFramework\/Controller.swift",
       "kind": "BooleanLiteral",
-      "offset": 4367,
+      "offset": 4857,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/sonam.sodani\/Documents\/GitHub-CXApp\/iOS\/visualix-ios\/VisualixFramework\/Controller.swift",
       "kind": "IntegerLiteral",
-      "offset": 4435,
+      "offset": 4925,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/sonam.sodani\/Documents\/GitHub-CXApp\/iOS\/visualix-ios\/VisualixFramework\/Controller.swift",
       "kind": "IntegerLiteral",
-      "offset": 4437,
+      "offset": 4927,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/sonam.sodani\/Documents\/GitHub-CXApp\/iOS\/visualix-ios\/VisualixFramework\/Controller.swift",
       "kind": "IntegerLiteral",
-      "offset": 4439,
+      "offset": 4929,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/sonam.sodani\/Documents\/GitHub-CXApp\/iOS\/visualix-ios\/VisualixFramework\/Controller.swift",
       "kind": "IntegerLiteral",
-      "offset": 4507,
+      "offset": 4997,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/sonam.sodani\/Documents\/GitHub-CXApp\/iOS\/visualix-ios\/VisualixFramework\/Controller.swift",
       "kind": "IntegerLiteral",
-      "offset": 4509,
+      "offset": 4999,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/sonam.sodani\/Documents\/GitHub-CXApp\/iOS\/visualix-ios\/VisualixFramework\/Controller.swift",
       "kind": "IntegerLiteral",
-      "offset": 4511,
+      "offset": 5001,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/sonam.sodani\/Documents\/GitHub-CXApp\/iOS\/visualix-ios\/VisualixFramework\/Controller.swift",
       "kind": "IntegerLiteral",
-      "offset": 4536,
+      "offset": 5026,
       "length": 2,
       "value": "50"
     },
     {
       "filePath": "\/Users\/sonam.sodani\/Documents\/GitHub-CXApp\/iOS\/visualix-ios\/VisualixFramework\/Controller.swift",
       "kind": "BooleanLiteral",
-      "offset": 4704,
+      "offset": 5194,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/sonam.sodani\/Documents\/GitHub-CXApp\/iOS\/visualix-ios\/VisualixFramework\/Controller.swift",
       "kind": "StringLiteral",
-      "offset": 6538,
+      "offset": 7028,
       "length": 26,
       "value": "\"----- in error try catch\""
     },
     {
       "filePath": "\/Users\/sonam.sodani\/Documents\/GitHub-CXApp\/iOS\/visualix-ios\/VisualixFramework\/Controller.swift",
       "kind": "StringLiteral",
-      "offset": 6916,
+      "offset": 7406,
       "length": 9,
       "value": "\"Timeout\""
     },
     {
       "filePath": "\/Users\/sonam.sodani\/Documents\/GitHub-CXApp\/iOS\/visualix-ios\/VisualixFramework\/Controller.swift",
       "kind": "StringLiteral",
-      "offset": 7450,
+      "offset": 7940,
       "length": 62,
       "value": "\"Needs to have no ARSCNVIEWDelegate defined on ARSCNView used\""
     },
     {
       "filePath": "\/Users\/sonam.sodani\/Documents\/GitHub-CXApp\/iOS\/visualix-ios\/VisualixFramework\/Controller.swift",
       "kind": "BooleanLiteral",
-      "offset": 7582,
+      "offset": 8072,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/sonam.sodani\/Documents\/GitHub-CXApp\/iOS\/visualix-ios\/VisualixFramework\/Controller.swift",
       "kind": "BooleanLiteral",
-      "offset": 7590,
+      "offset": 8080,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/sonam.sodani\/Documents\/GitHub-CXApp\/iOS\/visualix-ios\/VisualixFramework\/Controller.swift",
       "kind": "StringLiteral",
-      "offset": 7726,
+      "offset": 8258,
       "length": 44,
       "value": "\"EnabledBarcodeLocalization with delegate: \""
     },
     {
       "filePath": "\/Users\/sonam.sodani\/Documents\/GitHub-CXApp\/iOS\/visualix-ios\/VisualixFramework\/Controller.swift",
       "kind": "StringLiteral",
-      "offset": 8089,
+      "offset": 8734,
       "length": 11,
       "value": "\"Localized\""
     },
     {
       "filePath": "\/Users\/sonam.sodani\/Documents\/GitHub-CXApp\/iOS\/visualix-ios\/VisualixFramework\/Controller.swift",
       "kind": "BooleanLiteral",
-      "offset": 8856,
+      "offset": 9665,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/sonam.sodani\/Documents\/GitHub-CXApp\/iOS\/visualix-ios\/VisualixFramework\/Controller.swift",
       "kind": "BooleanLiteral",
-      "offset": 9499,
+      "offset": 10308,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/sonam.sodani\/Documents\/GitHub-CXApp\/iOS\/visualix-ios\/VisualixFramework\/Controller.swift",
       "kind": "IntegerLiteral",
-      "offset": 9955,
+      "offset": 10764,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/sonam.sodani\/Documents\/GitHub-CXApp\/iOS\/visualix-ios\/VisualixFramework\/Controller.swift",
       "kind": "IntegerLiteral",
-      "offset": 10034,
+      "offset": 10843,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/sonam.sodani\/Documents\/GitHub-CXApp\/iOS\/visualix-ios\/VisualixFramework\/Controller.swift",
       "kind": "IntegerLiteral",
-      "offset": 10113,
+      "offset": 10922,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/sonam.sodani\/Documents\/GitHub-CXApp\/iOS\/visualix-ios\/VisualixFramework\/Controller.swift",
       "kind": "IntegerLiteral",
-      "offset": 10273,
+      "offset": 11082,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/sonam.sodani\/Documents\/GitHub-CXApp\/iOS\/visualix-ios\/VisualixFramework\/Controller.swift",
       "kind": "IntegerLiteral",
-      "offset": 10303,
+      "offset": 11112,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/sonam.sodani\/Documents\/GitHub-CXApp\/iOS\/visualix-ios\/VisualixFramework\/Controller.swift",
       "kind": "IntegerLiteral",
-      "offset": 10333,
+      "offset": 11142,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/sonam.sodani\/Documents\/GitHub-CXApp\/iOS\/visualix-ios\/VisualixFramework\/Controller.swift",
       "kind": "IntegerLiteral",
-      "offset": 10394,
+      "offset": 11203,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/sonam.sodani\/Documents\/GitHub-CXApp\/iOS\/visualix-ios\/VisualixFramework\/Controller.swift",
       "kind": "IntegerLiteral",
-      "offset": 10425,
+      "offset": 11234,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/sonam.sodani\/Documents\/GitHub-CXApp\/iOS\/visualix-ios\/VisualixFramework\/Controller.swift",
       "kind": "IntegerLiteral",
-      "offset": 10456,
+      "offset": 11265,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/sonam.sodani\/Documents\/GitHub-CXApp\/iOS\/visualix-ios\/VisualixFramework\/Controller.swift",
       "kind": "IntegerLiteral",
-      "offset": 10740,
+      "offset": 11549,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/sonam.sodani\/Documents\/GitHub-CXApp\/iOS\/visualix-ios\/VisualixFramework\/Controller.swift",
       "kind": "IntegerLiteral",
-      "offset": 10766,
+      "offset": 11575,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/sonam.sodani\/Documents\/GitHub-CXApp\/iOS\/visualix-ios\/VisualixFramework\/Controller.swift",
       "kind": "IntegerLiteral",
-      "offset": 10784,
+      "offset": 11593,
       "length": 2,
       "value": "-1"
     },
     {
       "filePath": "\/Users\/sonam.sodani\/Documents\/GitHub-CXApp\/iOS\/visualix-ios\/VisualixFramework\/Controller.swift",
       "kind": "IntegerLiteral",
-      "offset": 10822,
+      "offset": 11631,
       "length": 3,
       "value": "180"
     },
     {
       "filePath": "\/Users\/sonam.sodani\/Documents\/GitHub-CXApp\/iOS\/visualix-ios\/VisualixFramework\/Controller.swift",
       "kind": "BooleanLiteral",
-      "offset": 11057,
+      "offset": 11866,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/sonam.sodani\/Documents\/GitHub-CXApp\/iOS\/visualix-ios\/VisualixFramework\/Controller.swift",
       "kind": "BooleanLiteral",
-      "offset": 11098,
+      "offset": 11907,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/sonam.sodani\/Documents\/GitHub-CXApp\/iOS\/visualix-ios\/VisualixFramework\/Controller.swift",
       "kind": "StringLiteral",
-      "offset": 11478,
+      "offset": 12287,
       "length": 9,
       "value": "\"mapping\""
     },
     {
       "filePath": "\/Users\/sonam.sodani\/Documents\/GitHub-CXApp\/iOS\/visualix-ios\/VisualixFramework\/Controller.swift",
       "kind": "StringLiteral",
-      "offset": 11490,
+      "offset": 12299,
       "length": 7,
       "value": "\"query\""
     },
     {
       "filePath": "\/Users\/sonam.sodani\/Documents\/GitHub-CXApp\/iOS\/visualix-ios\/VisualixFramework\/Controller.swift",
       "kind": "Dictionary",
-      "offset": 11953,
+      "offset": 12762,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/sonam.sodani\/Documents\/GitHub-CXApp\/iOS\/visualix-ios\/VisualixFramework\/Controller.swift",
       "kind": "StringLiteral",
-      "offset": 12711,
+      "offset": 13520,
       "length": 233,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/sonam.sodani\/Documents\/GitHub-CXApp\/iOS\/visualix-ios\/VisualixFramework\/Controller.swift",
       "kind": "StringLiteral",
-      "offset": 12736,
+      "offset": 13545,
       "length": 1,
       "value": "\" \""
     },
     {
       "filePath": "\/Users\/sonam.sodani\/Documents\/GitHub-CXApp\/iOS\/visualix-ios\/VisualixFramework\/Controller.swift",
       "kind": "StringLiteral",
-      "offset": 12746,
+      "offset": 13555,
       "length": 1,
       "value": "\" \""
     },
     {
       "filePath": "\/Users\/sonam.sodani\/Documents\/GitHub-CXApp\/iOS\/visualix-ios\/VisualixFramework\/Controller.swift",
       "kind": "StringLiteral",
-      "offset": 12756,
+      "offset": 13565,
       "length": 1,
       "value": "\" \""
     },
     {
       "filePath": "\/Users\/sonam.sodani\/Documents\/GitHub-CXApp\/iOS\/visualix-ios\/VisualixFramework\/Controller.swift",
       "kind": "StringLiteral",
-      "offset": 12766,
+      "offset": 13575,
       "length": 1,
       "value": "\" \""
     },
     {
       "filePath": "\/Users\/sonam.sodani\/Documents\/GitHub-CXApp\/iOS\/visualix-ios\/VisualixFramework\/Controller.swift",
       "kind": "StringLiteral",
-      "offset": 12790,
+      "offset": 13599,
       "length": 1,
       "value": "\" \""
     },
     {
       "filePath": "\/Users\/sonam.sodani\/Documents\/GitHub-CXApp\/iOS\/visualix-ios\/VisualixFramework\/Controller.swift",
       "kind": "StringLiteral",
-      "offset": 12800,
+      "offset": 13609,
       "length": 1,
       "value": "\" \""
     },
     {
       "filePath": "\/Users\/sonam.sodani\/Documents\/GitHub-CXApp\/iOS\/visualix-ios\/VisualixFramework\/Controller.swift",
       "kind": "StringLiteral",
-      "offset": 12810,
+      "offset": 13619,
       "length": 1,
       "value": "\" \""
     },
     {
       "filePath": "\/Users\/sonam.sodani\/Documents\/GitHub-CXApp\/iOS\/visualix-ios\/VisualixFramework\/Controller.swift",
       "kind": "StringLiteral",
-      "offset": 12820,
+      "offset": 13629,
       "length": 1,
       "value": "\" \""
     },
     {
       "filePath": "\/Users\/sonam.sodani\/Documents\/GitHub-CXApp\/iOS\/visualix-ios\/VisualixFramework\/Controller.swift",
       "kind": "StringLiteral",
-      "offset": 12844,
+      "offset": 13653,
       "length": 1,
       "value": "\" \""
     },
     {
       "filePath": "\/Users\/sonam.sodani\/Documents\/GitHub-CXApp\/iOS\/visualix-ios\/VisualixFramework\/Controller.swift",
       "kind": "StringLiteral",
-      "offset": 12854,
+      "offset": 13663,
       "length": 1,
       "value": "\" \""
     },
     {
       "filePath": "\/Users\/sonam.sodani\/Documents\/GitHub-CXApp\/iOS\/visualix-ios\/VisualixFramework\/Controller.swift",
       "kind": "StringLiteral",
-      "offset": 12864,
+      "offset": 13673,
       "length": 1,
       "value": "\" \""
     },
     {
       "filePath": "\/Users\/sonam.sodani\/Documents\/GitHub-CXApp\/iOS\/visualix-ios\/VisualixFramework\/Controller.swift",
       "kind": "StringLiteral",
-      "offset": 12874,
+      "offset": 13683,
       "length": 1,
       "value": "\" \""
     },
     {
       "filePath": "\/Users\/sonam.sodani\/Documents\/GitHub-CXApp\/iOS\/visualix-ios\/VisualixFramework\/Controller.swift",
       "kind": "StringLiteral",
-      "offset": 12898,
+      "offset": 13707,
       "length": 1,
       "value": "\" \""
     },
     {
       "filePath": "\/Users\/sonam.sodani\/Documents\/GitHub-CXApp\/iOS\/visualix-ios\/VisualixFramework\/Controller.swift",
       "kind": "StringLiteral",
-      "offset": 12908,
+      "offset": 13717,
       "length": 1,
       "value": "\" \""
     },
     {
       "filePath": "\/Users\/sonam.sodani\/Documents\/GitHub-CXApp\/iOS\/visualix-ios\/VisualixFramework\/Controller.swift",
       "kind": "StringLiteral",
-      "offset": 12918,
+      "offset": 13727,
       "length": 1,
       "value": "\" \""
     },
     {
       "filePath": "\/Users\/sonam.sodani\/Documents\/GitHub-CXApp\/iOS\/visualix-ios\/VisualixFramework\/Controller.swift",
       "kind": "StringLiteral",
-      "offset": 12928,
-      "length": 51829,
+      "offset": 13737,
+      "length": 57495,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/sonam.sodani\/Documents\/GitHub-CXApp\/iOS\/visualix-ios\/VisualixFramework\/Controller.swift",
       "kind": "IntegerLiteral",
-      "offset": 13292,
+      "offset": 14101,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/sonam.sodani\/Documents\/GitHub-CXApp\/iOS\/visualix-ios\/VisualixFramework\/Controller.swift",
       "kind": "IntegerLiteral",
-      "offset": 13667,
+      "offset": 14476,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/sonam.sodani\/Documents\/GitHub-CXApp\/iOS\/visualix-ios\/VisualixFramework\/Controller.swift",
       "kind": "StringLiteral",
-      "offset": 13847,
+      "offset": 14656,
       "length": 4,
       "value": "\"id\""
     },
     {
       "filePath": "\/Users\/sonam.sodani\/Documents\/GitHub-CXApp\/iOS\/visualix-ios\/VisualixFramework\/Controller.swift",
       "kind": "StringLiteral",
-      "offset": 14033,
+      "offset": 14842,
       "length": 11,
       "value": "\"transform\""
     },
     {
       "filePath": "\/Users\/sonam.sodani\/Documents\/GitHub-CXApp\/iOS\/visualix-ios\/VisualixFramework\/Controller.swift",
       "kind": "BooleanLiteral",
-      "offset": 15172,
+      "offset": 15981,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/sonam.sodani\/Documents\/GitHub-CXApp\/iOS\/visualix-ios\/VisualixFramework\/Controller.swift",
       "kind": "BooleanLiteral",
-      "offset": 15400,
+      "offset": 16209,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/sonam.sodani\/Documents\/GitHub-CXApp\/iOS\/visualix-ios\/VisualixFramework\/Controller.swift",
       "kind": "StringLiteral",
-      "offset": 15713,
+      "offset": 16522,
       "length": 17,
       "value": "\"\/bruno\/map\/save\""
     },
     {
       "filePath": "\/Users\/sonam.sodani\/Documents\/GitHub-CXApp\/iOS\/visualix-ios\/VisualixFramework\/Controller.swift",
       "kind": "StringLiteral",
-      "offset": 15732,
+      "offset": 16541,
       "length": 27,
       "value": "\"{\"name\":\"\""
     },
     {
       "filePath": "\/Users\/sonam.sodani\/Documents\/GitHub-CXApp\/iOS\/visualix-ios\/VisualixFramework\/Controller.swift",
       "kind": "StringLiteral",
-      "offset": 15755,
+      "offset": 16564,
       "length": 1,
       "value": "\"\"}\""
     },
     {
       "filePath": "\/Users\/sonam.sodani\/Documents\/GitHub-CXApp\/iOS\/visualix-ios\/VisualixFramework\/Controller.swift",
       "kind": "StringLiteral",
-      "offset": 15983,
+      "offset": 16792,
       "length": 12,
       "value": "\"\/bruno\/map\""
     },
     {
       "filePath": "\/Users\/sonam.sodani\/Documents\/GitHub-CXApp\/iOS\/visualix-ios\/VisualixFramework\/Controller.swift",
       "kind": "StringLiteral",
-      "offset": 15997,
+      "offset": 16806,
       "length": 27,
       "value": "\"{\"name\":\"\""
     },
     {
       "filePath": "\/Users\/sonam.sodani\/Documents\/GitHub-CXApp\/iOS\/visualix-ios\/VisualixFramework\/Controller.swift",
       "kind": "StringLiteral",
-      "offset": 16020,
+      "offset": 16829,
       "length": 1,
       "value": "\"\"}\""
     },
     {
       "filePath": "\/Users\/sonam.sodani\/Documents\/GitHub-CXApp\/iOS\/visualix-ios\/VisualixFramework\/Controller.swift",
       "kind": "StringLiteral",
-      "offset": 16479,
+      "offset": 17288,
       "length": 12,
       "value": "\"\/bruno\/map\""
     },
     {
       "filePath": "\/Users\/sonam.sodani\/Documents\/GitHub-CXApp\/iOS\/visualix-ios\/VisualixFramework\/Controller.swift",
       "kind": "StringLiteral",
-      "offset": 16493,
+      "offset": 17302,
       "length": 27,
       "value": "\"{\"name\":\"\""
     },
     {
       "filePath": "\/Users\/sonam.sodani\/Documents\/GitHub-CXApp\/iOS\/visualix-ios\/VisualixFramework\/Controller.swift",
       "kind": "StringLiteral",
-      "offset": 16516,
+      "offset": 17325,
       "length": 1,
       "value": "\"\"}\""
     },
     {
       "filePath": "\/Users\/sonam.sodani\/Documents\/GitHub-CXApp\/iOS\/visualix-ios\/VisualixFramework\/Controller.swift",
       "kind": "StringLiteral",
-      "offset": 17199,
+      "offset": 18008,
       "length": 27,
       "value": "\"Failure to download Graph\""
     },
     {
       "filePath": "\/Users\/sonam.sodani\/Documents\/GitHub-CXApp\/iOS\/visualix-ios\/VisualixFramework\/Controller.swift",
       "kind": "IntegerLiteral",
-      "offset": 17234,
+      "offset": 18043,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/sonam.sodani\/Documents\/GitHub-CXApp\/iOS\/visualix-ios\/VisualixFramework\/Controller.swift",
       "kind": "StringLiteral",
-      "offset": 17493,
+      "offset": 18302,
       "length": 9,
       "value": "\"orignal\""
     },
     {
       "filePath": "\/Users\/sonam.sodani\/Documents\/GitHub-CXApp\/iOS\/visualix-ios\/VisualixFramework\/Controller.swift",
       "kind": "BooleanLiteral",
-      "offset": 17593,
+      "offset": 18402,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/sonam.sodani\/Documents\/GitHub-CXApp\/iOS\/visualix-ios\/VisualixFramework\/Controller.swift",
       "kind": "IntegerLiteral",
-      "offset": 17665,
+      "offset": 18474,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/sonam.sodani\/Documents\/GitHub-CXApp\/iOS\/visualix-ios\/VisualixFramework\/Controller.swift",
       "kind": "IntegerLiteral",
-      "offset": 17731,
+      "offset": 18540,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/sonam.sodani\/Documents\/GitHub-CXApp\/iOS\/visualix-ios\/VisualixFramework\/Controller.swift",
       "kind": "StringLiteral",
-      "offset": 18373,
+      "offset": 19182,
       "length": 10,
       "value": "\"waypoint\""
     },
     {
       "filePath": "\/Users\/sonam.sodani\/Documents\/GitHub-CXApp\/iOS\/visualix-ios\/VisualixFramework\/Controller.swift",
       "kind": "StringLiteral",
-      "offset": 18712,
+      "offset": 19521,
       "length": 12,
       "value": "\"Diablo Den\""
     },
     {
       "filePath": "\/Users\/sonam.sodani\/Documents\/GitHub-CXApp\/iOS\/visualix-ios\/VisualixFramework\/Controller.swift",
       "kind": "BooleanLiteral",
-      "offset": 18758,
+      "offset": 19567,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/sonam.sodani\/Documents\/GitHub-CXApp\/iOS\/visualix-ios\/VisualixFramework\/Controller.swift",
       "kind": "FloatLiteral",
-      "offset": 18820,
+      "offset": 19860,
       "length": 8,
       "value": "55.40619"
     },
     {
       "filePath": "\/Users\/sonam.sodani\/Documents\/GitHub-CXApp\/iOS\/visualix-ios\/VisualixFramework\/Controller.swift",
       "kind": "FloatLiteral",
-      "offset": 18833,
+      "offset": 19873,
       "length": 9,
       "value": "-74.25788"
     },
     {
       "filePath": "\/Users\/sonam.sodani\/Documents\/GitHub-CXApp\/iOS\/visualix-ios\/VisualixFramework\/Controller.swift",
       "kind": "IntegerLiteral",
-      "offset": 18953,
+      "offset": 19993,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/sonam.sodani\/Documents\/GitHub-CXApp\/iOS\/visualix-ios\/VisualixFramework\/Controller.swift",
       "kind": "StringLiteral",
-      "offset": 19147,
+      "offset": 20187,
       "length": 18,
       "value": "\"CustomArtLayer-1\""
     },
     {
       "filePath": "\/Users\/sonam.sodani\/Documents\/GitHub-CXApp\/iOS\/visualix-ios\/VisualixFramework\/Controller.swift",
       "kind": "IntegerLiteral",
-      "offset": 19286,
+      "offset": 20326,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/sonam.sodani\/Documents\/GitHub-CXApp\/iOS\/visualix-ios\/VisualixFramework\/Controller.swift",
       "kind": "IntegerLiteral",
-      "offset": 19417,
+      "offset": 20457,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/sonam.sodani\/Documents\/GitHub-CXApp\/iOS\/visualix-ios\/VisualixFramework\/Controller.swift",
       "kind": "StringLiteral",
-      "offset": 20704,
+      "offset": 21744,
       "length": 117,
       "value": "\"Adding wall # \""
     },
     {
       "filePath": "\/Users\/sonam.sodani\/Documents\/GitHub-CXApp\/iOS\/visualix-ios\/VisualixFramework\/Controller.swift",
       "kind": "StringLiteral",
-      "offset": 20730,
+      "offset": 21770,
       "length": 1,
       "value": "\",\""
     },
     {
       "filePath": "\/Users\/sonam.sodani\/Documents\/GitHub-CXApp\/iOS\/visualix-ios\/VisualixFramework\/Controller.swift",
       "kind": "StringLiteral",
-      "offset": 20739,
+      "offset": 21779,
       "length": 1,
       "value": "\": \""
     },
     {
       "filePath": "\/Users\/sonam.sodani\/Documents\/GitHub-CXApp\/iOS\/visualix-ios\/VisualixFramework\/Controller.swift",
       "kind": "StringLiteral",
-      "offset": 20754,
+      "offset": 21794,
       "length": 1,
       "value": "\" - \""
     },
     {
       "filePath": "\/Users\/sonam.sodani\/Documents\/GitHub-CXApp\/iOS\/visualix-ios\/VisualixFramework\/Controller.swift",
       "kind": "StringLiteral",
-      "offset": 20770,
+      "offset": 21810,
       "length": 6,
       "value": "\" length: \""
     },
     {
       "filePath": "\/Users\/sonam.sodani\/Documents\/GitHub-CXApp\/iOS\/visualix-ios\/VisualixFramework\/Controller.swift",
       "kind": "StringLiteral",
-      "offset": 20796,
+      "offset": 21836,
       "length": 5,
       "value": "\" angle: \""
     },
     {
       "filePath": "\/Users\/sonam.sodani\/Documents\/GitHub-CXApp\/iOS\/visualix-ios\/VisualixFramework\/Controller.swift",
       "kind": "StringLiteral",
-      "offset": 20820,
+      "offset": 21860,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/sonam.sodani\/Documents\/GitHub-CXApp\/iOS\/visualix-ios\/VisualixFramework\/Controller.swift",
       "kind": "IntegerLiteral",
-      "offset": 21014,
+      "offset": 22054,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/sonam.sodani\/Documents\/GitHub-CXApp\/iOS\/visualix-ios\/VisualixFramework\/Controller.swift",
       "kind": "StringLiteral",
-      "offset": 21052,
+      "offset": 22092,
       "length": 71,
       "value": "\"CXappQR found d=\""
     },
     {
       "filePath": "\/Users\/sonam.sodani\/Documents\/GitHub-CXApp\/iOS\/visualix-ios\/VisualixFramework\/Controller.swift",
       "kind": "StringLiteral",
-      "offset": 21073,
+      "offset": 22113,
       "length": 4,
       "value": "\" from \""
     },
     {
       "filePath": "\/Users\/sonam.sodani\/Documents\/GitHub-CXApp\/iOS\/visualix-ios\/VisualixFramework\/Controller.swift",
       "kind": "StringLiteral",
-      "offset": 21098,
+      "offset": 22138,
       "length": 1,
       "value": "\",\""
     },
     {
       "filePath": "\/Users\/sonam.sodani\/Documents\/GitHub-CXApp\/iOS\/visualix-ios\/VisualixFramework\/Controller.swift",
       "kind": "StringLiteral",
-      "offset": 21122,
+      "offset": 22162,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/sonam.sodani\/Documents\/GitHub-CXApp\/iOS\/visualix-ios\/VisualixFramework\/Controller.swift",
       "kind": "StringLiteral",
-      "offset": 21255,
+      "offset": 22295,
       "length": 98,
       "value": "\"NOT Adding wall: \""
     },
     {
       "filePath": "\/Users\/sonam.sodani\/Documents\/GitHub-CXApp\/iOS\/visualix-ios\/VisualixFramework\/Controller.swift",
       "kind": "StringLiteral",
-      "offset": 21286,
+      "offset": 22326,
       "length": 1,
       "value": "\" - \""
     },
     {
       "filePath": "\/Users\/sonam.sodani\/Documents\/GitHub-CXApp\/iOS\/visualix-ios\/VisualixFramework\/Controller.swift",
       "kind": "StringLiteral",
-      "offset": 21302,
+      "offset": 22342,
       "length": 6,
       "value": "\" length: \""
     },
     {
       "filePath": "\/Users\/sonam.sodani\/Documents\/GitHub-CXApp\/iOS\/visualix-ios\/VisualixFramework\/Controller.swift",
       "kind": "StringLiteral",
-      "offset": 21328,
+      "offset": 22368,
       "length": 5,
       "value": "\" angle: \""
     },
     {
       "filePath": "\/Users\/sonam.sodani\/Documents\/GitHub-CXApp\/iOS\/visualix-ios\/VisualixFramework\/Controller.swift",
       "kind": "StringLiteral",
-      "offset": 21352,
+      "offset": 22392,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/sonam.sodani\/Documents\/GitHub-CXApp\/iOS\/visualix-ios\/VisualixFramework\/Controller.swift",
       "kind": "IntegerLiteral",
-      "offset": 21431,
+      "offset": 22471,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/sonam.sodani\/Documents\/GitHub-CXApp\/iOS\/visualix-ios\/VisualixFramework\/Controller.swift",
       "kind": "StringLiteral",
-      "offset": 21457,
+      "offset": 22497,
       "length": 42,
       "value": "\"Number Wall Segments=\""
     },
     {
       "filePath": "\/Users\/sonam.sodani\/Documents\/GitHub-CXApp\/iOS\/visualix-ios\/VisualixFramework\/Controller.swift",
       "kind": "StringLiteral",
-      "offset": 21498,
+      "offset": 22538,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/sonam.sodani\/Documents\/GitHub-CXApp\/iOS\/visualix-ios\/VisualixFramework\/Controller.swift",
       "kind": "StringLiteral",
-      "offset": 21876,
+      "offset": 22916,
       "length": 163,
       "value": "\"Init map params: origin offset: \""
     },
     {
       "filePath": "\/Users\/sonam.sodani\/Documents\/GitHub-CXApp\/iOS\/visualix-ios\/VisualixFramework\/Controller.swift",
       "kind": "StringLiteral",
-      "offset": 21932,
+      "offset": 22972,
       "length": 3,
       "value": "\" and user mapping direction: \""
     },
     {
       "filePath": "\/Users\/sonam.sodani\/Documents\/GitHub-CXApp\/iOS\/visualix-ios\/VisualixFramework\/Controller.swift",
       "kind": "StringLiteral",
-      "offset": 21989,
+      "offset": 23029,
       "length": 3,
       "value": "\" and origin rotation: \""
     },
     {
       "filePath": "\/Users\/sonam.sodani\/Documents\/GitHub-CXApp\/iOS\/visualix-ios\/VisualixFramework\/Controller.swift",
       "kind": "StringLiteral",
-      "offset": 22038,
+      "offset": 23078,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/sonam.sodani\/Documents\/GitHub-CXApp\/iOS\/visualix-ios\/VisualixFramework\/Controller.swift",
       "kind": "StringLiteral",
-      "offset": 22165,
+      "offset": 23205,
       "length": 19,
       "value": "\"\/bruno\/rename\/map\""
     },
     {
       "filePath": "\/Users\/sonam.sodani\/Documents\/GitHub-CXApp\/iOS\/visualix-ios\/VisualixFramework\/Controller.swift",
       "kind": "StringLiteral",
-      "offset": 22185,
+      "offset": 23225,
       "length": 57,
       "value": "\"{\"old\":\"\""
     },
     {
       "filePath": "\/Users\/sonam.sodani\/Documents\/GitHub-CXApp\/iOS\/visualix-ios\/VisualixFramework\/Controller.swift",
       "kind": "StringLiteral",
-      "offset": 22210,
+      "offset": 23250,
       "length": 1,
       "value": "\"\", \"new\": \"\""
     },
     {
       "filePath": "\/Users\/sonam.sodani\/Documents\/GitHub-CXApp\/iOS\/visualix-ios\/VisualixFramework\/Controller.swift",
       "kind": "StringLiteral",
-      "offset": 22238,
+      "offset": 23278,
       "length": 1,
       "value": "\"\"}\""
     },
     {
       "filePath": "\/Users\/sonam.sodani\/Documents\/GitHub-CXApp\/iOS\/visualix-ios\/VisualixFramework\/Controller.swift",
       "kind": "StringLiteral",
-      "offset": 22540,
+      "offset": 23580,
       "length": 47,
       "value": "\"\/renameInfoPoints\/\""
     },
     {
       "filePath": "\/Users\/sonam.sodani\/Documents\/GitHub-CXApp\/iOS\/visualix-ios\/VisualixFramework\/Controller.swift",
       "kind": "StringLiteral",
-      "offset": 22572,
+      "offset": 23612,
       "length": 1,
       "value": "\"\/\""
     },
     {
       "filePath": "\/Users\/sonam.sodani\/Documents\/GitHub-CXApp\/iOS\/visualix-ios\/VisualixFramework\/Controller.swift",
       "kind": "StringLiteral",
-      "offset": 22586,
+      "offset": 23626,
       "length": 4,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/sonam.sodani\/Documents\/GitHub-CXApp\/iOS\/visualix-ios\/VisualixFramework\/Controller.swift",
       "kind": "StringLiteral",
-      "offset": 22589,
+      "offset": 23629,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/sonam.sodani\/Documents\/GitHub-CXApp\/iOS\/visualix-ios\/VisualixFramework\/Controller.swift",
       "kind": "BooleanLiteral",
-      "offset": 22608,
+      "offset": 23648,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/sonam.sodani\/Documents\/GitHub-CXApp\/iOS\/visualix-ios\/VisualixFramework\/Controller.swift",
       "kind": "StringLiteral",
-      "offset": 22854,
+      "offset": 23894,
       "length": 15,
       "value": "\"\/bruno\/status\""
     },
     {
       "filePath": "\/Users\/sonam.sodani\/Documents\/GitHub-CXApp\/iOS\/visualix-ios\/VisualixFramework\/Controller.swift",
       "kind": "StringLiteral",
-      "offset": 22871,
+      "offset": 23911,
       "length": 31,
       "value": "\"{\"status\":\"localization\"}\""
     },
     {
       "filePath": "\/Users\/sonam.sodani\/Documents\/GitHub-CXApp\/iOS\/visualix-ios\/VisualixFramework\/Controller.swift",
       "kind": "StringLiteral",
-      "offset": 23101,
+      "offset": 24141,
       "length": 15,
       "value": "\"\/bruno\/status\""
     },
     {
       "filePath": "\/Users\/sonam.sodani\/Documents\/GitHub-CXApp\/iOS\/visualix-ios\/VisualixFramework\/Controller.swift",
       "kind": "StringLiteral",
-      "offset": 23118,
+      "offset": 24158,
       "length": 26,
       "value": "\"{\"status\":\"restart\"}\""
     },
     {
       "filePath": "\/Users\/sonam.sodani\/Documents\/GitHub-CXApp\/iOS\/visualix-ios\/VisualixFramework\/Controller.swift",
       "kind": "IntegerLiteral",
-      "offset": 23406,
+      "offset": 24446,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/sonam.sodani\/Documents\/GitHub-CXApp\/iOS\/visualix-ios\/VisualixFramework\/Controller.swift",
       "kind": "IntegerLiteral",
-      "offset": 23420,
+      "offset": 24460,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/sonam.sodani\/Documents\/GitHub-CXApp\/iOS\/visualix-ios\/VisualixFramework\/Controller.swift",
       "kind": "StringLiteral",
-      "offset": 23504,
+      "offset": 24544,
       "length": 30,
       "value": "\"\/bruno\/map\/trajectory?start=\""
     },
     {
       "filePath": "\/Users\/sonam.sodani\/Documents\/GitHub-CXApp\/iOS\/visualix-ios\/VisualixFramework\/Controller.swift",
       "kind": "StringLiteral",
-      "offset": 23553,
+      "offset": 24593,
       "length": 7,
       "value": "\"&end=\""
     },
     {
       "filePath": "\/Users\/sonam.sodani\/Documents\/GitHub-CXApp\/iOS\/visualix-ios\/VisualixFramework\/Controller.swift",
       "kind": "StringLiteral",
-      "offset": 23915,
+      "offset": 24955,
       "length": 37,
       "value": "\"\/bruno\/map\/trajectory?start=0&end=0\""
     },
     {
       "filePath": "\/Users\/sonam.sodani\/Documents\/GitHub-CXApp\/iOS\/visualix-ios\/VisualixFramework\/Controller.swift",
       "kind": "BooleanLiteral",
-      "offset": 24124,
+      "offset": 25164,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/sonam.sodani\/Documents\/GitHub-CXApp\/iOS\/visualix-ios\/VisualixFramework\/Controller.swift",
       "kind": "IntegerLiteral",
-      "offset": 24218,
+      "offset": 25258,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/sonam.sodani\/Documents\/GitHub-CXApp\/iOS\/visualix-ios\/VisualixFramework\/Controller.swift",
       "kind": "BooleanLiteral",
-      "offset": 24250,
+      "offset": 25290,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/sonam.sodani\/Documents\/GitHub-CXApp\/iOS\/visualix-ios\/VisualixFramework\/Controller.swift",
       "kind": "BooleanLiteral",
-      "offset": 24285,
+      "offset": 25325,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/sonam.sodani\/Documents\/GitHub-CXApp\/iOS\/visualix-ios\/VisualixFramework\/Controller.swift",
       "kind": "StringLiteral",
-      "offset": 24381,
+      "offset": 25421,
       "length": 18,
       "value": "\"\/bruno\/map\/state\""
     },
     {
       "filePath": "\/Users\/sonam.sodani\/Documents\/GitHub-CXApp\/iOS\/visualix-ios\/VisualixFramework\/Controller.swift",
       "kind": "StringLiteral",
-      "offset": 24700,
+      "offset": 25740,
       "length": 15,
       "value": "\"\/bruno\/status\""
     },
     {
       "filePath": "\/Users\/sonam.sodani\/Documents\/GitHub-CXApp\/iOS\/visualix-ios\/VisualixFramework\/Controller.swift",
       "kind": "IntegerLiteral",
-      "offset": 27049,
+      "offset": 28089,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/sonam.sodani\/Documents\/GitHub-CXApp\/iOS\/visualix-ios\/VisualixFramework\/Controller.swift",
       "kind": "IntegerLiteral",
-      "offset": 27076,
+      "offset": 28116,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/sonam.sodani\/Documents\/GitHub-CXApp\/iOS\/visualix-ios\/VisualixFramework\/Controller.swift",
       "kind": "IntegerLiteral",
-      "offset": 28404,
+      "offset": 29444,
       "length": 3,
       "value": "180"
     },
     {
       "filePath": "\/Users\/sonam.sodani\/Documents\/GitHub-CXApp\/iOS\/visualix-ios\/VisualixFramework\/Controller.swift",
       "kind": "FloatLiteral",
-      "offset": 29700,
+      "offset": 30740,
       "length": 3,
       "value": "0.0"
     },
     {
       "filePath": "\/Users\/sonam.sodani\/Documents\/GitHub-CXApp\/iOS\/visualix-ios\/VisualixFramework\/Controller.swift",
       "kind": "FloatLiteral",
-      "offset": 29705,
+      "offset": 30745,
       "length": 3,
       "value": "0.0"
     },
     {
       "filePath": "\/Users\/sonam.sodani\/Documents\/GitHub-CXApp\/iOS\/visualix-ios\/VisualixFramework\/Controller.swift",
       "kind": "FloatLiteral",
-      "offset": 29710,
+      "offset": 30750,
       "length": 3,
       "value": "1.0"
     },
     {
       "filePath": "\/Users\/sonam.sodani\/Documents\/GitHub-CXApp\/iOS\/visualix-ios\/VisualixFramework\/Controller.swift",
       "kind": "IntegerLiteral",
-      "offset": 29920,
+      "offset": 30960,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/sonam.sodani\/Documents\/GitHub-CXApp\/iOS\/visualix-ios\/VisualixFramework\/Controller.swift",
       "kind": "IntegerLiteral",
-      "offset": 29976,
+      "offset": 31016,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/sonam.sodani\/Documents\/GitHub-CXApp\/iOS\/visualix-ios\/VisualixFramework\/Controller.swift",
       "kind": "IntegerLiteral",
-      "offset": 30029,
+      "offset": 31068,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/sonam.sodani\/Documents\/GitHub-CXApp\/iOS\/visualix-ios\/VisualixFramework\/Controller.swift",
+      "kind": "IntegerLiteral",
+      "offset": 31102,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/sonam.sodani\/Documents\/GitHub-CXApp\/iOS\/visualix-ios\/VisualixFramework\/Controller.swift",
       "kind": "FloatLiteral",
-      "offset": 31051,
+      "offset": 32000,
       "length": 3,
       "value": "0.0"
     },
     {
       "filePath": "\/Users\/sonam.sodani\/Documents\/GitHub-CXApp\/iOS\/visualix-ios\/VisualixFramework\/Controller.swift",
       "kind": "FloatLiteral",
-      "offset": 31056,
+      "offset": 32005,
       "length": 3,
       "value": "1.0"
     },
     {
       "filePath": "\/Users\/sonam.sodani\/Documents\/GitHub-CXApp\/iOS\/visualix-ios\/VisualixFramework\/Controller.swift",
       "kind": "FloatLiteral",
-      "offset": 31061,
+      "offset": 32010,
       "length": 3,
       "value": "0.0"
     },
     {
       "filePath": "\/Users\/sonam.sodani\/Documents\/GitHub-CXApp\/iOS\/visualix-ios\/VisualixFramework\/Controller.swift",
-      "kind": "FloatLiteral",
-      "offset": 31583,
-      "length": 4,
-      "value": "90.0"
-    },
-    {
-      "filePath": "\/Users\/sonam.sodani\/Documents\/GitHub-CXApp\/iOS\/visualix-ios\/VisualixFramework\/Controller.swift",
       "kind": "IntegerLiteral",
-      "offset": 31597,
-      "length": 3,
-      "value": "180"
-    },
-    {
-      "filePath": "\/Users\/sonam.sodani\/Documents\/GitHub-CXApp\/iOS\/visualix-ios\/VisualixFramework\/Controller.swift",
-      "kind": "IntegerLiteral",
-      "offset": 31616,
-      "length": 3,
-      "value": "180"
-    },
-    {
-      "filePath": "\/Users\/sonam.sodani\/Documents\/GitHub-CXApp\/iOS\/visualix-ios\/VisualixFramework\/Controller.swift",
-      "kind": "IntegerLiteral",
-      "offset": 31952,
+      "offset": 33078,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/sonam.sodani\/Documents\/GitHub-CXApp\/iOS\/visualix-ios\/VisualixFramework\/Controller.swift",
       "kind": "IntegerLiteral",
-      "offset": 32034,
+      "offset": 33160,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/sonam.sodani\/Documents\/GitHub-CXApp\/iOS\/visualix-ios\/VisualixFramework\/Controller.swift",
       "kind": "IntegerLiteral",
-      "offset": 32539,
+      "offset": 33665,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/sonam.sodani\/Documents\/GitHub-CXApp\/iOS\/visualix-ios\/VisualixFramework\/Controller.swift",
       "kind": "FloatLiteral",
-      "offset": 32617,
+      "offset": 33743,
       "length": 4,
       "value": "0.99"
     },
     {
       "filePath": "\/Users\/sonam.sodani\/Documents\/GitHub-CXApp\/iOS\/visualix-ios\/VisualixFramework\/Controller.swift",
       "kind": "StringLiteral",
-      "offset": 34108,
+      "offset": 35234,
       "length": 322,
       "value": "\"wall to match (\""
     },
     {
       "filePath": "\/Users\/sonam.sodani\/Documents\/GitHub-CXApp\/iOS\/visualix-ios\/VisualixFramework\/Controller.swift",
       "kind": "StringLiteral",
-      "offset": 34140,
+      "offset": 35266,
       "length": 1,
       "value": "\",\""
     },
     {
       "filePath": "\/Users\/sonam.sodani\/Documents\/GitHub-CXApp\/iOS\/visualix-ios\/VisualixFramework\/Controller.swift",
       "kind": "StringLiteral",
-      "offset": 34161,
+      "offset": 35287,
       "length": 1,
       "value": "\"): angle=\""
     },
     {
       "filePath": "\/Users\/sonam.sodani\/Documents\/GitHub-CXApp\/iOS\/visualix-ios\/VisualixFramework\/Controller.swift",
       "kind": "IntegerLiteral",
-      "offset": 34185,
+      "offset": 35311,
       "length": 3,
       "value": "180"
     },
     {
       "filePath": "\/Users\/sonam.sodani\/Documents\/GitHub-CXApp\/iOS\/visualix-ios\/VisualixFramework\/Controller.swift",
       "kind": "StringLiteral",
-      "offset": 34195,
+      "offset": 35321,
       "length": 6,
       "value": "\" angle2=\""
     },
     {
       "filePath": "\/Users\/sonam.sodani\/Documents\/GitHub-CXApp\/iOS\/visualix-ios\/VisualixFramework\/Controller.swift",
       "kind": "IntegerLiteral",
-      "offset": 34218,
+      "offset": 35344,
       "length": 3,
       "value": "180"
     },
     {
       "filePath": "\/Users\/sonam.sodani\/Documents\/GitHub-CXApp\/iOS\/visualix-ios\/VisualixFramework\/Controller.swift",
       "kind": "StringLiteral",
-      "offset": 34228,
+      "offset": 35354,
       "length": 1,
       "value": "\" (\""
     },
     {
       "filePath": "\/Users\/sonam.sodani\/Documents\/GitHub-CXApp\/iOS\/visualix-ios\/VisualixFramework\/Controller.swift",
       "kind": "IntegerLiteral",
-      "offset": 34253,
+      "offset": 35379,
       "length": 3,
       "value": "180"
     },
     {
       "filePath": "\/Users\/sonam.sodani\/Documents\/GitHub-CXApp\/iOS\/visualix-ios\/VisualixFramework\/Controller.swift",
       "kind": "StringLiteral",
-      "offset": 34263,
+      "offset": 35389,
       "length": 1,
       "value": "\" - \""
     },
     {
       "filePath": "\/Users\/sonam.sodani\/Documents\/GitHub-CXApp\/iOS\/visualix-ios\/VisualixFramework\/Controller.swift",
       "kind": "IntegerLiteral",
-      "offset": 34296,
+      "offset": 35422,
       "length": 3,
       "value": "180"
     },
     {
       "filePath": "\/Users\/sonam.sodani\/Documents\/GitHub-CXApp\/iOS\/visualix-ios\/VisualixFramework\/Controller.swift",
       "kind": "StringLiteral",
-      "offset": 34306,
+      "offset": 35432,
       "length": 1,
       "value": "\") adiff1=\""
     },
     {
       "filePath": "\/Users\/sonam.sodani\/Documents\/GitHub-CXApp\/iOS\/visualix-ios\/VisualixFramework\/Controller.swift",
       "kind": "StringLiteral",
-      "offset": 34325,
+      "offset": 35451,
       "length": 2,
       "value": "\" <= \""
     },
     {
       "filePath": "\/Users\/sonam.sodani\/Documents\/GitHub-CXApp\/iOS\/visualix-ios\/VisualixFramework\/Controller.swift",
       "kind": "StringLiteral",
-      "offset": 34349,
+      "offset": 35475,
       "length": 3,
       "value": "\" len=\""
     },
     {
       "filePath": "\/Users\/sonam.sodani\/Documents\/GitHub-CXApp\/iOS\/visualix-ios\/VisualixFramework\/Controller.swift",
       "kind": "StringLiteral",
-      "offset": 34368,
+      "offset": 35494,
       "length": 1,
       "value": "\" > \""
     },
     {
       "filePath": "\/Users\/sonam.sodani\/Documents\/GitHub-CXApp\/iOS\/visualix-ios\/VisualixFramework\/Controller.swift",
       "kind": "StringLiteral",
-      "offset": 34383,
+      "offset": 35509,
       "length": 9,
       "value": "\" matchdist=\""
     },
     {
       "filePath": "\/Users\/sonam.sodani\/Documents\/GitHub-CXApp\/iOS\/visualix-ios\/VisualixFramework\/Controller.swift",
       "kind": "StringLiteral",
-      "offset": 34406,
+      "offset": 35532,
       "length": 2,
       "value": "\" <= \""
     },
     {
       "filePath": "\/Users\/sonam.sodani\/Documents\/GitHub-CXApp\/iOS\/visualix-ios\/VisualixFramework\/Controller.swift",
       "kind": "StringLiteral",
-      "offset": 34429,
+      "offset": 35555,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/sonam.sodani\/Documents\/GitHub-CXApp\/iOS\/visualix-ios\/VisualixFramework\/Controller.swift",
       "kind": "IntegerLiteral",
-      "offset": 35419,
+      "offset": 36545,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/sonam.sodani\/Documents\/GitHub-CXApp\/iOS\/visualix-ios\/VisualixFramework\/Controller.swift",
       "kind": "StringLiteral",
-      "offset": 35698,
+      "offset": 36824,
       "length": 91,
       "value": "\"wall to point=\""
     },
     {
       "filePath": "\/Users\/sonam.sodani\/Documents\/GitHub-CXApp\/iOS\/visualix-ios\/VisualixFramework\/Controller.swift",
       "kind": "StringLiteral",
-      "offset": 35726,
+      "offset": 36852,
       "length": 2,
       "value": "\" is=\""
     },
     {
       "filePath": "\/Users\/sonam.sodani\/Documents\/GitHub-CXApp\/iOS\/visualix-ios\/VisualixFramework\/Controller.swift",
       "kind": "StringLiteral",
-      "offset": 35740,
+      "offset": 36866,
       "length": 2,
       "value": "\" d1=\""
     },
     {
       "filePath": "\/Users\/sonam.sodani\/Documents\/GitHub-CXApp\/iOS\/visualix-ios\/VisualixFramework\/Controller.swift",
       "kind": "StringLiteral",
-      "offset": 35749,
+      "offset": 36875,
       "length": 2,
       "value": "\" d2=\""
     },
     {
       "filePath": "\/Users\/sonam.sodani\/Documents\/GitHub-CXApp\/iOS\/visualix-ios\/VisualixFramework\/Controller.swift",
       "kind": "StringLiteral",
-      "offset": 35758,
+      "offset": 36884,
       "length": 3,
       "value": "\" min=\""
     },
     {
       "filePath": "\/Users\/sonam.sodani\/Documents\/GitHub-CXApp\/iOS\/visualix-ios\/VisualixFramework\/Controller.swift",
       "kind": "StringLiteral",
-      "offset": 35770,
+      "offset": 36896,
       "length": 2,
       "value": "\" >= \""
     },
     {
       "filePath": "\/Users\/sonam.sodani\/Documents\/GitHub-CXApp\/iOS\/visualix-ios\/VisualixFramework\/Controller.swift",
       "kind": "IntegerLiteral",
-      "offset": 35786,
+      "offset": 36912,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/sonam.sodani\/Documents\/GitHub-CXApp\/iOS\/visualix-ios\/VisualixFramework\/Controller.swift",
       "kind": "StringLiteral",
-      "offset": 35788,
+      "offset": 36914,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/sonam.sodani\/Documents\/GitHub-CXApp\/iOS\/visualix-ios\/VisualixFramework\/Controller.swift",
       "kind": "IntegerLiteral",
-      "offset": 36099,
+      "offset": 37225,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/sonam.sodani\/Documents\/GitHub-CXApp\/iOS\/visualix-ios\/VisualixFramework\/Controller.swift",
       "kind": "IntegerLiteral",
-      "offset": 38522,
+      "offset": 39648,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/sonam.sodani\/Documents\/GitHub-CXApp\/iOS\/visualix-ios\/VisualixFramework\/Controller.swift",
       "kind": "IntegerLiteral",
-      "offset": 38625,
+      "offset": 39751,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/sonam.sodani\/Documents\/GitHub-CXApp\/iOS\/visualix-ios\/VisualixFramework\/Controller.swift",
       "kind": "StringLiteral",
-      "offset": 39750,
+      "offset": 40876,
       "length": 114,
       "value": "\"userplaneang = \""
     },
     {
       "filePath": "\/Users\/sonam.sodani\/Documents\/GitHub-CXApp\/iOS\/visualix-ios\/VisualixFramework\/Controller.swift",
       "kind": "StringLiteral",
-      "offset": 39784,
+      "offset": 40910,
       "length": 1,
       "value": "\" - (\""
     },
     {
       "filePath": "\/Users\/sonam.sodani\/Documents\/GitHub-CXApp\/iOS\/visualix-ios\/VisualixFramework\/Controller.swift",
       "kind": "StringLiteral",
-      "offset": 39801,
+      "offset": 40927,
       "length": 1,
       "value": "\"-\""
     },
     {
       "filePath": "\/Users\/sonam.sodani\/Documents\/GitHub-CXApp\/iOS\/visualix-ios\/VisualixFramework\/Controller.swift",
       "kind": "StringLiteral",
-      "offset": 39843,
+      "offset": 40969,
       "length": 1,
       "value": "\") = \""
     },
     {
       "filePath": "\/Users\/sonam.sodani\/Documents\/GitHub-CXApp\/iOS\/visualix-ios\/VisualixFramework\/Controller.swift",
       "kind": "StringLiteral",
-      "offset": 39863,
+      "offset": 40989,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/sonam.sodani\/Documents\/GitHub-CXApp\/iOS\/visualix-ios\/VisualixFramework\/Controller.swift",
       "kind": "IntegerLiteral",
-      "offset": 40908,
+      "offset": 42034,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/sonam.sodani\/Documents\/GitHub-CXApp\/iOS\/visualix-ios\/VisualixFramework\/Controller.swift",
       "kind": "StringLiteral",
-      "offset": 41013,
+      "offset": 42139,
       "length": 18,
       "value": "\"using 2nd option\""
     },
     {
       "filePath": "\/Users\/sonam.sodani\/Documents\/GitHub-CXApp\/iOS\/visualix-ios\/VisualixFramework\/Controller.swift",
       "kind": "StringLiteral",
-      "offset": 41082,
+      "offset": 42208,
       "length": 134,
       "value": "\"position calc: pct=\""
     },
     {
       "filePath": "\/Users\/sonam.sodani\/Documents\/GitHub-CXApp\/iOS\/visualix-ios\/VisualixFramework\/Controller.swift",
       "kind": "StringLiteral",
-      "offset": 41129,
+      "offset": 42255,
       "length": 1,
       "value": "\"+\""
     },
     {
       "filePath": "\/Users\/sonam.sodani\/Documents\/GitHub-CXApp\/iOS\/visualix-ios\/VisualixFramework\/Controller.swift",
       "kind": "StringLiteral",
-      "offset": 41145,
+      "offset": 42271,
       "length": 4,
       "value": "\" orig=(\""
     },
     {
       "filePath": "\/Users\/sonam.sodani\/Documents\/GitHub-CXApp\/iOS\/visualix-ios\/VisualixFramework\/Controller.swift",
       "kind": "StringLiteral",
-      "offset": 41164,
+      "offset": 42290,
       "length": 1,
       "value": "\", \""
     },
     {
       "filePath": "\/Users\/sonam.sodani\/Documents\/GitHub-CXApp\/iOS\/visualix-ios\/VisualixFramework\/Controller.swift",
       "kind": "StringLiteral",
-      "offset": 41181,
+      "offset": 42307,
       "length": 1,
       "value": "\") new=(\""
     },
     {
       "filePath": "\/Users\/sonam.sodani\/Documents\/GitHub-CXApp\/iOS\/visualix-ios\/VisualixFramework\/Controller.swift",
       "kind": "StringLiteral",
-      "offset": 41200,
+      "offset": 42326,
       "length": 1,
       "value": "\", \""
     },
     {
       "filePath": "\/Users\/sonam.sodani\/Documents\/GitHub-CXApp\/iOS\/visualix-ios\/VisualixFramework\/Controller.swift",
       "kind": "StringLiteral",
-      "offset": 41214,
+      "offset": 42340,
       "length": 1,
       "value": "\")\""
     },
     {
       "filePath": "\/Users\/sonam.sodani\/Documents\/GitHub-CXApp\/iOS\/visualix-ios\/VisualixFramework\/Controller.swift",
       "kind": "StringLiteral",
-      "offset": 41291,
+      "offset": 42417,
       "length": 53,
       "value": "\"Size mismatch \""
     },
     {
       "filePath": "\/Users\/sonam.sodani\/Documents\/GitHub-CXApp\/iOS\/visualix-ios\/VisualixFramework\/Controller.swift",
       "kind": "StringLiteral",
-      "offset": 41318,
+      "offset": 42444,
       "length": 1,
       "value": "\" < \""
     },
     {
       "filePath": "\/Users\/sonam.sodani\/Documents\/GitHub-CXApp\/iOS\/visualix-ios\/VisualixFramework\/Controller.swift",
       "kind": "FloatLiteral",
-      "offset": 41338,
+      "offset": 42464,
       "length": 4,
       "value": "0.90"
     },
     {
       "filePath": "\/Users\/sonam.sodani\/Documents\/GitHub-CXApp\/iOS\/visualix-ios\/VisualixFramework\/Controller.swift",
       "kind": "StringLiteral",
-      "offset": 41343,
+      "offset": 42469,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/sonam.sodani\/Documents\/GitHub-CXApp\/iOS\/visualix-ios\/VisualixFramework\/Controller.swift",
       "kind": "StringLiteral",
-      "offset": 41493,
+      "offset": 42619,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/sonam.sodani\/Documents\/GitHub-CXApp\/iOS\/visualix-ios\/VisualixFramework\/Controller.swift",
       "kind": "StringLiteral",
-      "offset": 41765,
-      "length": 201,
+      "offset": 42891,
+      "length": 204,
       "value": "\"Wall: at \""
     },
     {
       "filePath": "\/Users\/sonam.sodani\/Documents\/GitHub-CXApp\/iOS\/visualix-ios\/VisualixFramework\/Controller.swift",
       "kind": "StringLiteral",
-      "offset": 41788,
+      "offset": 42914,
       "length": 4,
       "value": "\" size: \""
     },
     {
       "filePath": "\/Users\/sonam.sodani\/Documents\/GitHub-CXApp\/iOS\/visualix-ios\/VisualixFramework\/Controller.swift",
       "kind": "StringLiteral",
-      "offset": 41816,
+      "offset": 42942,
       "length": 8,
       "value": "\" rotation: \""
     },
     {
       "filePath": "\/Users\/sonam.sodani\/Documents\/GitHub-CXApp\/iOS\/visualix-ios\/VisualixFramework\/Controller.swift",
       "kind": "StringLiteral",
-      "offset": 41840,
+      "offset": 42966,
       "length": 4,
       "value": "\" user pos: \""
     },
     {
       "filePath": "\/Users\/sonam.sodani\/Documents\/GitHub-CXApp\/iOS\/visualix-ios\/VisualixFramework\/Controller.swift",
       "kind": "StringLiteral",
-      "offset": 41906,
+      "offset": 43032,
       "length": 2,
       "value": "\" qr rotation: \""
     },
     {
       "filePath": "\/Users\/sonam.sodani\/Documents\/GitHub-CXApp\/iOS\/visualix-ios\/VisualixFramework\/Controller.swift",
       "kind": "StringLiteral",
-      "offset": 41950,
+      "offset": 43079,
       "length": 7,
       "value": "\" matched: \""
     },
     {
       "filePath": "\/Users\/sonam.sodani\/Documents\/GitHub-CXApp\/iOS\/visualix-ios\/VisualixFramework\/Controller.swift",
       "kind": "StringLiteral",
-      "offset": 41965,
+      "offset": 43094,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/sonam.sodani\/Documents\/GitHub-CXApp\/iOS\/visualix-ios\/VisualixFramework\/Controller.swift",
       "kind": "StringLiteral",
-      "offset": 43324,
+      "offset": 44453,
       "length": 160,
       "value": "\"Matched wall: \""
     },
     {
       "filePath": "\/Users\/sonam.sodani\/Documents\/GitHub-CXApp\/iOS\/visualix-ios\/VisualixFramework\/Controller.swift",
       "kind": "StringLiteral",
-      "offset": 43361,
+      "offset": 44490,
       "length": 1,
       "value": "\",\""
     },
     {
       "filePath": "\/Users\/sonam.sodani\/Documents\/GitHub-CXApp\/iOS\/visualix-ios\/VisualixFramework\/Controller.swift",
       "kind": "StringLiteral",
-      "offset": 43388,
+      "offset": 44517,
       "length": 1,
       "value": "\": alignment error=\""
     },
     {
       "filePath": "\/Users\/sonam.sodani\/Documents\/GitHub-CXApp\/iOS\/visualix-ios\/VisualixFramework\/Controller.swift",
       "kind": "IntegerLiteral",
-      "offset": 43435,
+      "offset": 44564,
       "length": 3,
       "value": "180"
     },
     {
       "filePath": "\/Users\/sonam.sodani\/Documents\/GitHub-CXApp\/iOS\/visualix-ios\/VisualixFramework\/Controller.swift",
       "kind": "StringLiteral",
-      "offset": 43445,
+      "offset": 44574,
       "length": 1,
       "value": "\", pos error=\""
     },
     {
       "filePath": "\/Users\/sonam.sodani\/Documents\/GitHub-CXApp\/iOS\/visualix-ios\/VisualixFramework\/Controller.swift",
       "kind": "StringLiteral",
-      "offset": 43483,
+      "offset": 44612,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/sonam.sodani\/Documents\/GitHub-CXApp\/iOS\/visualix-ios\/VisualixFramework\/Controller.swift",
       "kind": "BooleanLiteral",
-      "offset": 43935,
+      "offset": 45064,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/sonam.sodani\/Documents\/GitHub-CXApp\/iOS\/visualix-ios\/VisualixFramework\/Controller.swift",
       "kind": "BooleanLiteral",
-      "offset": 44174,
+      "offset": 45303,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/sonam.sodani\/Documents\/GitHub-CXApp\/iOS\/visualix-ios\/VisualixFramework\/Controller.swift",
       "kind": "IntegerLiteral",
-      "offset": 44366,
+      "offset": 45495,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/sonam.sodani\/Documents\/GitHub-CXApp\/iOS\/visualix-ios\/VisualixFramework\/Controller.swift",
       "kind": "BooleanLiteral",
-      "offset": 44550,
+      "offset": 45679,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/sonam.sodani\/Documents\/GitHub-CXApp\/iOS\/visualix-ios\/VisualixFramework\/Controller.swift",
       "kind": "StringLiteral",
-      "offset": 44671,
+      "offset": 45800,
       "length": 101,
       "value": "\"No wall to align to: \""
     },
     {
       "filePath": "\/Users\/sonam.sodani\/Documents\/GitHub-CXApp\/iOS\/visualix-ios\/VisualixFramework\/Controller.swift",
       "kind": "StringLiteral",
-      "offset": 44723,
+      "offset": 45852,
       "length": 1,
       "value": "\", \""
     },
     {
       "filePath": "\/Users\/sonam.sodani\/Documents\/GitHub-CXApp\/iOS\/visualix-ios\/VisualixFramework\/Controller.swift",
       "kind": "StringLiteral",
-      "offset": 44771,
+      "offset": 45900,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/sonam.sodani\/Documents\/GitHub-CXApp\/iOS\/visualix-ios\/VisualixFramework\/Controller.swift",
       "kind": "Array",
-      "offset": 44868,
+      "offset": 45997,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/sonam.sodani\/Documents\/GitHub-CXApp\/iOS\/visualix-ios\/VisualixFramework\/Controller.swift",
       "kind": "BooleanLiteral",
-      "offset": 45090,
+      "offset": 46219,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/sonam.sodani\/Documents\/GitHub-CXApp\/iOS\/visualix-ios\/VisualixFramework\/Controller.swift",
       "kind": "IntegerLiteral",
-      "offset": 45403,
+      "offset": 46555,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/sonam.sodani\/Documents\/GitHub-CXApp\/iOS\/visualix-ios\/VisualixFramework\/Controller.swift",
       "kind": "IntegerLiteral",
-      "offset": 46109,
+      "offset": 47253,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/sonam.sodani\/Documents\/GitHub-CXApp\/iOS\/visualix-ios\/VisualixFramework\/Controller.swift",
       "kind": "IntegerLiteral",
-      "offset": 46212,
+      "offset": 47356,
       "length": 1,
       "value": "5"
     },
     {
       "filePath": "\/Users\/sonam.sodani\/Documents\/GitHub-CXApp\/iOS\/visualix-ios\/VisualixFramework\/Controller.swift",
       "kind": "IntegerLiteral",
-      "offset": 46217,
+      "offset": 47361,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/sonam.sodani\/Documents\/GitHub-CXApp\/iOS\/visualix-ios\/VisualixFramework\/Controller.swift",
       "kind": "StringLiteral",
-      "offset": 46381,
+      "offset": 47525,
       "length": 204,
       "value": "\"Looking for walls! t=\""
     },
     {
       "filePath": "\/Users\/sonam.sodani\/Documents\/GitHub-CXApp\/iOS\/visualix-ios\/VisualixFramework\/Controller.swift",
       "kind": "StringLiteral",
-      "offset": 46428,
+      "offset": 47572,
       "length": 1,
       "value": "\", d2=\""
     },
     {
       "filePath": "\/Users\/sonam.sodani\/Documents\/GitHub-CXApp\/iOS\/visualix-ios\/VisualixFramework\/Controller.swift",
       "kind": "StringLiteral",
-      "offset": 46462,
+      "offset": 47606,
       "length": 1,
       "value": "\"+\""
     },
     {
       "filePath": "\/Users\/sonam.sodani\/Documents\/GitHub-CXApp\/iOS\/visualix-ios\/VisualixFramework\/Controller.swift",
       "kind": "StringLiteral",
-      "offset": 46486,
+      "offset": 47630,
       "length": 1,
       "value": "\"-\""
     },
     {
       "filePath": "\/Users\/sonam.sodani\/Documents\/GitHub-CXApp\/iOS\/visualix-ios\/VisualixFramework\/Controller.swift",
       "kind": "StringLiteral",
-      "offset": 46520,
+      "offset": 47664,
       "length": 1,
       "value": "\", \""
     },
     {
       "filePath": "\/Users\/sonam.sodani\/Documents\/GitHub-CXApp\/iOS\/visualix-ios\/VisualixFramework\/Controller.swift",
       "kind": "StringLiteral",
-      "offset": 46562,
+      "offset": 47706,
       "length": 1,
       "value": "\" s=\""
     },
     {
       "filePath": "\/Users\/sonam.sodani\/Documents\/GitHub-CXApp\/iOS\/visualix-ios\/VisualixFramework\/Controller.swift",
       "kind": "StringLiteral",
-      "offset": 46584,
+      "offset": 47728,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/sonam.sodani\/Documents\/GitHub-CXApp\/iOS\/visualix-ios\/VisualixFramework\/Controller.swift",
       "kind": "StringLiteral",
-      "offset": 46685,
+      "offset": 47829,
       "length": 100,
       "value": "\"Not looking for walls anymore, s=\""
     },
     {
       "filePath": "\/Users\/sonam.sodani\/Documents\/GitHub-CXApp\/iOS\/visualix-ios\/VisualixFramework\/Controller.swift",
       "kind": "StringLiteral",
-      "offset": 46733,
+      "offset": 47877,
       "length": 1,
       "value": "\", t2=\""
     },
     {
       "filePath": "\/Users\/sonam.sodani\/Documents\/GitHub-CXApp\/iOS\/visualix-ios\/VisualixFramework\/Controller.swift",
       "kind": "StringLiteral",
-      "offset": 46784,
+      "offset": 47928,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/sonam.sodani\/Documents\/GitHub-CXApp\/iOS\/visualix-ios\/VisualixFramework\/Controller.swift",
       "kind": "Array",
-      "offset": 46834,
+      "offset": 47978,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/sonam.sodani\/Documents\/GitHub-CXApp\/iOS\/visualix-ios\/VisualixFramework\/Controller.swift",
       "kind": "BooleanLiteral",
-      "offset": 46867,
+      "offset": 48011,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/sonam.sodani\/Documents\/GitHub-CXApp\/iOS\/visualix-ios\/VisualixFramework\/Controller.swift",
       "kind": "BooleanLiteral",
-      "offset": 46923,
+      "offset": 48067,
       "length": 4,
       "value": "true"
-    },
-    {
-      "filePath": "\/Users\/sonam.sodani\/Documents\/GitHub-CXApp\/iOS\/visualix-ios\/VisualixFramework\/Controller.swift",
-      "kind": "StringLiteral",
-      "offset": 47029,
-      "length": 52,
-      "value": "\"IOS too old or no walls in map, NOT tracking walls\""
     },
     {
       "filePath": "\/Users\/sonam.sodani\/Documents\/GitHub-CXApp\/iOS\/visualix-ios\/VisualixFramework\/Controller.swift",
       "kind": "BooleanLiteral",
-      "offset": 48251,
+      "offset": 49397,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/sonam.sodani\/Documents\/GitHub-CXApp\/iOS\/visualix-ios\/VisualixFramework\/Controller.swift",
       "kind": "StringLiteral",
-      "offset": 48693,
+      "offset": 49839,
       "length": 28,
       "value": "\"Remove wall: \""
     },
     {
       "filePath": "\/Users\/sonam.sodani\/Documents\/GitHub-CXApp\/iOS\/visualix-ios\/VisualixFramework\/Controller.swift",
       "kind": "StringLiteral",
-      "offset": 48720,
+      "offset": 49866,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/sonam.sodani\/Documents\/GitHub-CXApp\/iOS\/visualix-ios\/VisualixFramework\/Controller.swift",
       "kind": "StringLiteral",
-      "offset": 49131,
+      "offset": 50277,
       "length": 57,
       "value": "\"run with configuration: \""
     },
     {
       "filePath": "\/Users\/sonam.sodani\/Documents\/GitHub-CXApp\/iOS\/visualix-ios\/VisualixFramework\/Controller.swift",
       "kind": "StringLiteral",
-      "offset": 49187,
+      "offset": 50333,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/sonam.sodani\/Documents\/GitHub-CXApp\/iOS\/visualix-ios\/VisualixFramework\/Controller.swift",
       "kind": "IntegerLiteral",
-      "offset": 49330,
+      "offset": 50477,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/sonam.sodani\/Documents\/GitHub-CXApp\/iOS\/visualix-ios\/VisualixFramework\/Controller.swift",
       "kind": "IntegerLiteral",
-      "offset": 49508,
+      "offset": 50666,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/sonam.sodani\/Documents\/GitHub-CXApp\/iOS\/visualix-ios\/VisualixFramework\/Controller.swift",
       "kind": "IntegerLiteral",
-      "offset": 50133,
+      "offset": 51294,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/sonam.sodani\/Documents\/GitHub-CXApp\/iOS\/visualix-ios\/VisualixFramework\/Controller.swift",
       "kind": "StringLiteral",
-      "offset": 50746,
+      "offset": 51428,
+      "length": 31,
+      "value": "\"Matched AR image as \""
+    },
+    {
+      "filePath": "\/Users\/sonam.sodani\/Documents\/GitHub-CXApp\/iOS\/visualix-ios\/VisualixFramework\/Controller.swift",
+      "kind": "StringLiteral",
+      "offset": 51458,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/sonam.sodani\/Documents\/GitHub-CXApp\/iOS\/visualix-ios\/VisualixFramework\/Controller.swift",
+      "kind": "StringLiteral",
+      "offset": 51937,
       "length": 18,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/sonam.sodani\/Documents\/GitHub-CXApp\/iOS\/visualix-ios\/VisualixFramework\/Controller.swift",
       "kind": "StringLiteral",
-      "offset": 50763,
+      "offset": 51954,
       "length": 17,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/sonam.sodani\/Documents\/GitHub-CXApp\/iOS\/visualix-ios\/VisualixFramework\/Controller.swift",
       "kind": "StringLiteral",
-      "offset": 50779,
+      "offset": 51970,
       "length": 26,
       "value": "\"waypoint\""
     },
     {
       "filePath": "\/Users\/sonam.sodani\/Documents\/GitHub-CXApp\/iOS\/visualix-ios\/VisualixFramework\/Controller.swift",
       "kind": "StringLiteral",
-      "offset": 50804,
+      "offset": 51995,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/sonam.sodani\/Documents\/GitHub-CXApp\/iOS\/visualix-ios\/VisualixFramework\/Controller.swift",
       "kind": "StringLiteral",
-      "offset": 50950,
+      "offset": 52141,
       "length": 49,
       "value": "\"Unable to find destination for \""
     },
     {
       "filePath": "\/Users\/sonam.sodani\/Documents\/GitHub-CXApp\/iOS\/visualix-ios\/VisualixFramework\/Controller.swift",
       "kind": "StringLiteral",
-      "offset": 50998,
+      "offset": 52189,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/sonam.sodani\/Documents\/GitHub-CXApp\/iOS\/visualix-ios\/VisualixFramework\/Controller.swift",
       "kind": "BooleanLiteral",
-      "offset": 51088,
+      "offset": 52279,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/sonam.sodani\/Documents\/GitHub-CXApp\/iOS\/visualix-ios\/VisualixFramework\/Controller.swift",
+      "kind": "BooleanLiteral",
+      "offset": 52548,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/sonam.sodani\/Documents\/GitHub-CXApp\/iOS\/visualix-ios\/VisualixFramework\/Controller.swift",
+      "kind": "StringLiteral",
+      "offset": 53020,
+      "length": 50,
+      "value": "\"total found text: \""
+    },
+    {
+      "filePath": "\/Users\/sonam.sodani\/Documents\/GitHub-CXApp\/iOS\/visualix-ios\/VisualixFramework\/Controller.swift",
+      "kind": "StringLiteral",
+      "offset": 53047,
+      "length": 1,
+      "value": "\" = making a spike node\""
+    },
+    {
+      "filePath": "\/Users\/sonam.sodani\/Documents\/GitHub-CXApp\/iOS\/visualix-ios\/VisualixFramework\/Controller.swift",
+      "kind": "StringLiteral",
+      "offset": 53286,
+      "length": 24,
+      "value": "\"unfound text: \""
+    },
+    {
+      "filePath": "\/Users\/sonam.sodani\/Documents\/GitHub-CXApp\/iOS\/visualix-ios\/VisualixFramework\/Controller.swift",
+      "kind": "StringLiteral",
+      "offset": 53309,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/sonam.sodani\/Documents\/GitHub-CXApp\/iOS\/visualix-ios\/VisualixFramework\/Controller.swift",
+      "kind": "StringLiteral",
+      "offset": 53433,
+      "length": 33,
+      "value": "\"Not tracking a current anything\""
+    },
+    {
+      "filePath": "\/Users\/sonam.sodani\/Documents\/GitHub-CXApp\/iOS\/visualix-ios\/VisualixFramework\/Controller.swift",
+      "kind": "IntegerLiteral",
+      "offset": 53707,
+      "length": 1,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/sonam.sodani\/Documents\/GitHub-CXApp\/iOS\/visualix-ios\/VisualixFramework\/Controller.swift",
       "kind": "FloatLiteral",
-      "offset": 51302,
+      "offset": 53839,
       "length": 5,
       "value": "0.002"
     },
     {
       "filePath": "\/Users\/sonam.sodani\/Documents\/GitHub-CXApp\/iOS\/visualix-ios\/VisualixFramework\/Controller.swift",
       "kind": "FloatLiteral",
-      "offset": 51317,
+      "offset": 53854,
       "length": 3,
       "value": "0.5"
     },
     {
       "filePath": "\/Users\/sonam.sodani\/Documents\/GitHub-CXApp\/iOS\/visualix-ios\/VisualixFramework\/Controller.swift",
       "kind": "IntegerLiteral",
-      "offset": 51339,
+      "offset": 53876,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/sonam.sodani\/Documents\/GitHub-CXApp\/iOS\/visualix-ios\/VisualixFramework\/Controller.swift",
       "kind": "BooleanLiteral",
-      "offset": 51407,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/sonam.sodani\/Documents\/GitHub-CXApp\/iOS\/visualix-ios\/VisualixFramework\/Controller.swift",
-      "kind": "IntegerLiteral",
-      "offset": 51584,
-      "length": 1,
-      "value": "2"
-    },
-    {
-      "filePath": "\/Users\/sonam.sodani\/Documents\/GitHub-CXApp\/iOS\/visualix-ios\/VisualixFramework\/Controller.swift",
-      "kind": "BooleanLiteral",
-      "offset": 51782,
+      "offset": 54040,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/sonam.sodani\/Documents\/GitHub-CXApp\/iOS\/visualix-ios\/VisualixFramework\/Controller.swift",
       "kind": "StringLiteral",
-      "offset": 51915,
-      "length": 33,
-      "value": "\"Not tracking a current anything\""
-    },
-    {
-      "filePath": "\/Users\/sonam.sodani\/Documents\/GitHub-CXApp\/iOS\/visualix-ios\/VisualixFramework\/Controller.swift",
-      "kind": "StringLiteral",
-      "offset": 52299,
+      "offset": 54432,
       "length": 39,
       "value": "\"plane-\""
     },
     {
       "filePath": "\/Users\/sonam.sodani\/Documents\/GitHub-CXApp\/iOS\/visualix-ios\/VisualixFramework\/Controller.swift",
       "kind": "StringLiteral",
-      "offset": 52337,
+      "offset": 54470,
       "length": 1,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/sonam.sodani\/Documents\/GitHub-CXApp\/iOS\/visualix-ios\/VisualixFramework\/Controller.swift",
       "kind": "BooleanLiteral",
-      "offset": 52368,
+      "offset": 54501,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/sonam.sodani\/Documents\/GitHub-CXApp\/iOS\/visualix-ios\/VisualixFramework\/Controller.swift",
       "kind": "StringLiteral",
-      "offset": 52391,
+      "offset": 54524,
       "length": 26,
       "value": "\"Add plane: \""
     },
     {
       "filePath": "\/Users\/sonam.sodani\/Documents\/GitHub-CXApp\/iOS\/visualix-ios\/VisualixFramework\/Controller.swift",
       "kind": "StringLiteral",
-      "offset": 52416,
+      "offset": 54549,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/sonam.sodani\/Documents\/GitHub-CXApp\/iOS\/visualix-ios\/VisualixFramework\/Controller.swift",
-      "kind": "BooleanLiteral",
-      "offset": 52996,
-      "length": 5,
-      "value": "false"
+      "kind": "StringLiteral",
+      "offset": 55197,
+      "length": 2,
+      "value": "\"\""
     },
     {
       "filePath": "\/Users\/sonam.sodani\/Documents\/GitHub-CXApp\/iOS\/visualix-ios\/VisualixFramework\/Controller.swift",
       "kind": "StringLiteral",
-      "offset": 53168,
+      "offset": 55390,
       "length": 18,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/sonam.sodani\/Documents\/GitHub-CXApp\/iOS\/visualix-ios\/VisualixFramework\/Controller.swift",
       "kind": "StringLiteral",
-      "offset": 53185,
+      "offset": 55407,
       "length": 17,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/sonam.sodani\/Documents\/GitHub-CXApp\/iOS\/visualix-ios\/VisualixFramework\/Controller.swift",
       "kind": "StringLiteral",
-      "offset": 53201,
+      "offset": 55423,
       "length": 26,
       "value": "\"waypoint\""
     },
     {
       "filePath": "\/Users\/sonam.sodani\/Documents\/GitHub-CXApp\/iOS\/visualix-ios\/VisualixFramework\/Controller.swift",
       "kind": "StringLiteral",
-      "offset": 53226,
-      "length": 4,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/sonam.sodani\/Documents\/GitHub-CXApp\/iOS\/visualix-ios\/VisualixFramework\/Controller.swift",
-      "kind": "IntegerLiteral",
-      "offset": 53587,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/sonam.sodani\/Documents\/GitHub-CXApp\/iOS\/visualix-ios\/VisualixFramework\/Controller.swift",
-      "kind": "StringLiteral",
-      "offset": 54601,
-      "length": 122,
-      "value": "\"new best old=\""
-    },
-    {
-      "filePath": "\/Users\/sonam.sodani\/Documents\/GitHub-CXApp\/iOS\/visualix-ios\/VisualixFramework\/Controller.swift",
-      "kind": "StringLiteral",
-      "offset": 54629,
-      "length": 1,
-      "value": "\" t=\""
-    },
-    {
-      "filePath": "\/Users\/sonam.sodani\/Documents\/GitHub-CXApp\/iOS\/visualix-ios\/VisualixFramework\/Controller.swift",
-      "kind": "StringLiteral",
-      "offset": 54676,
-      "length": 3,
-      "value": "\" new=\""
-    },
-    {
-      "filePath": "\/Users\/sonam.sodani\/Documents\/GitHub-CXApp\/iOS\/visualix-ios\/VisualixFramework\/Controller.swift",
-      "kind": "StringLiteral",
-      "offset": 54696,
-      "length": 4,
-      "value": "\" oldq=\""
-    },
-    {
-      "filePath": "\/Users\/sonam.sodani\/Documents\/GitHub-CXApp\/iOS\/visualix-ios\/VisualixFramework\/Controller.swift",
-      "kind": "StringLiteral",
-      "offset": 54722,
+      "offset": 55448,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/sonam.sodani\/Documents\/GitHub-CXApp\/iOS\/visualix-ios\/VisualixFramework\/Controller.swift",
-      "kind": "IntegerLiteral",
-      "offset": 55393,
-      "length": 3,
-      "value": "360"
+      "kind": "StringLiteral",
+      "offset": 55742,
+      "length": 5,
+      "value": "\"180\""
+    },
+    {
+      "filePath": "\/Users\/sonam.sodani\/Documents\/GitHub-CXApp\/iOS\/visualix-ios\/VisualixFramework\/Controller.swift",
+      "kind": "BooleanLiteral",
+      "offset": 55920,
+      "length": 5,
+      "value": "false"
     },
     {
       "filePath": "\/Users\/sonam.sodani\/Documents\/GitHub-CXApp\/iOS\/visualix-ios\/VisualixFramework\/Controller.swift",
       "kind": "IntegerLiteral",
-      "offset": 55416,
+      "offset": 56190,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/sonam.sodani\/Documents\/GitHub-CXApp\/iOS\/visualix-ios\/VisualixFramework\/Controller.swift",
+      "kind": "IntegerLiteral",
+      "offset": 56755,
+      "length": 1,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/sonam.sodani\/Documents\/GitHub-CXApp\/iOS\/visualix-ios\/VisualixFramework\/Controller.swift",
+      "kind": "IntegerLiteral",
+      "offset": 56796,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/sonam.sodani\/Documents\/GitHub-CXApp\/iOS\/visualix-ios\/VisualixFramework\/Controller.swift",
       "kind": "StringLiteral",
-      "offset": 56186,
-      "length": 188,
+      "offset": 57403,
+      "length": 136,
+      "value": "\"new best old=\""
+    },
+    {
+      "filePath": "\/Users\/sonam.sodani\/Documents\/GitHub-CXApp\/iOS\/visualix-ios\/VisualixFramework\/Controller.swift",
+      "kind": "StringLiteral",
+      "offset": 57434,
+      "length": 1,
+      "value": "\" t=\""
+    },
+    {
+      "filePath": "\/Users\/sonam.sodani\/Documents\/GitHub-CXApp\/iOS\/visualix-ios\/VisualixFramework\/Controller.swift",
+      "kind": "StringLiteral",
+      "offset": 57484,
+      "length": 3,
+      "value": "\" new=\""
+    },
+    {
+      "filePath": "\/Users\/sonam.sodani\/Documents\/GitHub-CXApp\/iOS\/visualix-ios\/VisualixFramework\/Controller.swift",
+      "kind": "StringLiteral",
+      "offset": 57504,
+      "length": 4,
+      "value": "\" oldq=\""
+    },
+    {
+      "filePath": "\/Users\/sonam.sodani\/Documents\/GitHub-CXApp\/iOS\/visualix-ios\/VisualixFramework\/Controller.swift",
+      "kind": "StringLiteral",
+      "offset": 57538,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/sonam.sodani\/Documents\/GitHub-CXApp\/iOS\/visualix-ios\/VisualixFramework\/Controller.swift",
+      "kind": "IntegerLiteral",
+      "offset": 58198,
+      "length": 3,
+      "value": "360"
+    },
+    {
+      "filePath": "\/Users\/sonam.sodani\/Documents\/GitHub-CXApp\/iOS\/visualix-ios\/VisualixFramework\/Controller.swift",
+      "kind": "StringLiteral",
+      "offset": 58980,
+      "length": 190,
       "value": "\"Localized against QR \""
     },
     {
       "filePath": "\/Users\/sonam.sodani\/Documents\/GitHub-CXApp\/iOS\/visualix-ios\/VisualixFramework\/Controller.swift",
       "kind": "StringLiteral",
-      "offset": 56217,
+      "offset": 59011,
       "length": 7,
       "value": "\" heading: \""
     },
     {
       "filePath": "\/Users\/sonam.sodani\/Documents\/GitHub-CXApp\/iOS\/visualix-ios\/VisualixFramework\/Controller.swift",
       "kind": "StringLiteral",
-      "offset": 56240,
+      "offset": 59030,
       "length": 6,
       "value": "\" facing: \""
     },
     {
       "filePath": "\/Users\/sonam.sodani\/Documents\/GitHub-CXApp\/iOS\/visualix-ios\/VisualixFramework\/Controller.swift",
       "kind": "StringLiteral",
-      "offset": 56264,
+      "offset": 59054,
       "length": 4,
       "value": "\" dist:\""
     },
     {
       "filePath": "\/Users\/sonam.sodani\/Documents\/GitHub-CXApp\/iOS\/visualix-ios\/VisualixFramework\/Controller.swift",
       "kind": "StringLiteral",
-      "offset": 56281,
+      "offset": 59071,
       "length": 5,
       "value": "\" error: \""
     },
     {
       "filePath": "\/Users\/sonam.sodani\/Documents\/GitHub-CXApp\/iOS\/visualix-ios\/VisualixFramework\/Controller.swift",
       "kind": "IntegerLiteral",
-      "offset": 56318,
+      "offset": 59111,
       "length": 3,
       "value": "180"
     },
     {
       "filePath": "\/Users\/sonam.sodani\/Documents\/GitHub-CXApp\/iOS\/visualix-ios\/VisualixFramework\/Controller.swift",
       "kind": "StringLiteral",
-      "offset": 56328,
+      "offset": 59121,
       "length": 8,
       "value": "\" rotation:\""
     },
     {
       "filePath": "\/Users\/sonam.sodani\/Documents\/GitHub-CXApp\/iOS\/visualix-ios\/VisualixFramework\/Controller.swift",
       "kind": "StringLiteral",
-      "offset": 56373,
+      "offset": 59169,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/sonam.sodani\/Documents\/GitHub-CXApp\/iOS\/visualix-ios\/VisualixFramework\/Controller.swift",
       "kind": "BooleanLiteral",
-      "offset": 56748,
+      "offset": 59550,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/sonam.sodani\/Documents\/GitHub-CXApp\/iOS\/visualix-ios\/VisualixFramework\/Controller.swift",
       "kind": "StringLiteral",
-      "offset": 57104,
+      "offset": 59912,
       "length": 13,
       "value": "\"pinkdot.png\""
     },
     {
       "filePath": "\/Users\/sonam.sodani\/Documents\/GitHub-CXApp\/iOS\/visualix-ios\/VisualixFramework\/Controller.swift",
       "kind": "StringLiteral",
-      "offset": 57127,
+      "offset": 59935,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/sonam.sodani\/Documents\/GitHub-CXApp\/iOS\/visualix-ios\/VisualixFramework\/Controller.swift",
       "kind": "StringLiteral",
-      "offset": 57144,
+      "offset": 59952,
       "length": 18,
       "value": "\"Assets.scnassets\""
     },
     {
       "filePath": "\/Users\/sonam.sodani\/Documents\/GitHub-CXApp\/iOS\/visualix-ios\/VisualixFramework\/Controller.swift",
       "kind": "BooleanLiteral",
-      "offset": 57468,
+      "offset": 60467,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/sonam.sodani\/Documents\/GitHub-CXApp\/iOS\/visualix-ios\/VisualixFramework\/Controller.swift",
       "kind": "IntegerLiteral",
-      "offset": 57632,
+      "offset": 60637,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/sonam.sodani\/Documents\/GitHub-CXApp\/iOS\/visualix-ios\/VisualixFramework\/Controller.swift",
       "kind": "FloatLiteral",
-      "offset": 57640,
+      "offset": 60645,
       "length": 3,
       "value": "0.4"
     },
     {
       "filePath": "\/Users\/sonam.sodani\/Documents\/GitHub-CXApp\/iOS\/visualix-ios\/VisualixFramework\/Controller.swift",
       "kind": "IntegerLiteral",
-      "offset": 57649,
+      "offset": 60654,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/sonam.sodani\/Documents\/GitHub-CXApp\/iOS\/visualix-ios\/VisualixFramework\/Controller.swift",
       "kind": "IntegerLiteral",
-      "offset": 57658,
+      "offset": 60663,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/sonam.sodani\/Documents\/GitHub-CXApp\/iOS\/visualix-ios\/VisualixFramework\/Controller.swift",
       "kind": "BooleanLiteral",
-      "offset": 58226,
+      "offset": 61237,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/sonam.sodani\/Documents\/GitHub-CXApp\/iOS\/visualix-ios\/VisualixFramework\/Controller.swift",
+      "kind": "BooleanLiteral",
+      "offset": 61411,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/sonam.sodani\/Documents\/GitHub-CXApp\/iOS\/visualix-ios\/VisualixFramework\/Controller.swift",
       "kind": "StringLiteral",
-      "offset": 58962,
+      "offset": 61986,
       "length": 6,
       "value": "\"Wall\""
     },
     {
       "filePath": "\/Users\/sonam.sodani\/Documents\/GitHub-CXApp\/iOS\/visualix-ios\/VisualixFramework\/Controller.swift",
       "kind": "BooleanLiteral",
-      "offset": 59640,
+      "offset": 62664,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/sonam.sodani\/Documents\/GitHub-CXApp\/iOS\/visualix-ios\/VisualixFramework\/Controller.swift",
       "kind": "BooleanLiteral",
-      "offset": 59795,
+      "offset": 62819,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/sonam.sodani\/Documents\/GitHub-CXApp\/iOS\/visualix-ios\/VisualixFramework\/Controller.swift",
       "kind": "BooleanLiteral",
-      "offset": 60809,
+      "offset": 63833,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/sonam.sodani\/Documents\/GitHub-CXApp\/iOS\/visualix-ios\/VisualixFramework\/Controller.swift",
       "kind": "BooleanLiteral",
-      "offset": 60921,
+      "offset": 63945,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/sonam.sodani\/Documents\/GitHub-CXApp\/iOS\/visualix-ios\/VisualixFramework\/Controller.swift",
       "kind": "StringLiteral",
-      "offset": 61534,
+      "offset": 64166,
+      "length": 28,
+      "value": "\"Match interest on: \""
+    },
+    {
+      "filePath": "\/Users\/sonam.sodani\/Documents\/GitHub-CXApp\/iOS\/visualix-ios\/VisualixFramework\/Controller.swift",
+      "kind": "StringLiteral",
+      "offset": 64193,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/sonam.sodani\/Documents\/GitHub-CXApp\/iOS\/visualix-ios\/VisualixFramework\/Controller.swift",
+      "kind": "BooleanLiteral",
+      "offset": 64215,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/sonam.sodani\/Documents\/GitHub-CXApp\/iOS\/visualix-ios\/VisualixFramework\/Controller.swift",
+      "kind": "BooleanLiteral",
+      "offset": 64245,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/sonam.sodani\/Documents\/GitHub-CXApp\/iOS\/visualix-ios\/VisualixFramework\/Controller.swift",
+      "kind": "StringLiteral",
+      "offset": 64815,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/sonam.sodani\/Documents\/GitHub-CXApp\/iOS\/visualix-ios\/VisualixFramework\/Controller.swift",
+      "kind": "StringLiteral",
+      "offset": 64955,
+      "length": 46,
+      "value": "\"Detected text: \""
+    },
+    {
+      "filePath": "\/Users\/sonam.sodani\/Documents\/GitHub-CXApp\/iOS\/visualix-ios\/VisualixFramework\/Controller.swift",
+      "kind": "StringLiteral",
+      "offset": 64987,
+      "length": 1,
+      "value": "\" = \""
+    },
+    {
+      "filePath": "\/Users\/sonam.sodani\/Documents\/GitHub-CXApp\/iOS\/visualix-ios\/VisualixFramework\/Controller.swift",
+      "kind": "StringLiteral",
+      "offset": 65000,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/sonam.sodani\/Documents\/GitHub-CXApp\/iOS\/visualix-ios\/VisualixFramework\/Controller.swift",
+      "kind": "StringLiteral",
+      "offset": 65156,
+      "length": 63,
+      "value": "\"Found text \""
+    },
+    {
+      "filePath": "\/Users\/sonam.sodani\/Documents\/GitHub-CXApp\/iOS\/visualix-ios\/VisualixFramework\/Controller.swift",
+      "kind": "StringLiteral",
+      "offset": 65184,
+      "length": 1,
+      "value": "\", but already tracking so aborting\""
+    },
+    {
+      "filePath": "\/Users\/sonam.sodani\/Documents\/GitHub-CXApp\/iOS\/visualix-ios\/VisualixFramework\/Controller.swift",
+      "kind": "FloatLiteral",
+      "offset": 65538,
+      "length": 3,
+      "value": "0.2"
+    },
+    {
+      "filePath": "\/Users\/sonam.sodani\/Documents\/GitHub-CXApp\/iOS\/visualix-ios\/VisualixFramework\/Controller.swift",
+      "kind": "IntegerLiteral",
+      "offset": 65757,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/sonam.sodani\/Documents\/GitHub-CXApp\/iOS\/visualix-ios\/VisualixFramework\/Controller.swift",
+      "kind": "StringLiteral",
+      "offset": 66105,
+      "length": 65,
+      "value": "\"Error: Could not convert text content into an ARReferenceImage.\""
+    },
+    {
+      "filePath": "\/Users\/sonam.sodani\/Documents\/GitHub-CXApp\/iOS\/visualix-ios\/VisualixFramework\/Controller.swift",
+      "kind": "StringLiteral",
+      "offset": 66768,
+      "length": 99,
+      "value": "\"Reference image validation failed: \""
+    },
+    {
+      "filePath": "\/Users\/sonam.sodani\/Documents\/GitHub-CXApp\/iOS\/visualix-ios\/VisualixFramework\/Controller.swift",
+      "kind": "StringLiteral",
+      "offset": 66833,
+      "length": 1,
+      "value": "\" \""
+    },
+    {
+      "filePath": "\/Users\/sonam.sodani\/Documents\/GitHub-CXApp\/iOS\/visualix-ios\/VisualixFramework\/Controller.swift",
+      "kind": "StringLiteral",
+      "offset": 66853,
+      "length": 1,
+      "value": "\" w:\""
+    },
+    {
+      "filePath": "\/Users\/sonam.sodani\/Documents\/GitHub-CXApp\/iOS\/visualix-ios\/VisualixFramework\/Controller.swift",
+      "kind": "StringLiteral",
+      "offset": 66866,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/sonam.sodani\/Documents\/GitHub-CXApp\/iOS\/visualix-ios\/VisualixFramework\/Controller.swift",
+      "kind": "StringLiteral",
+      "offset": 67043,
+      "length": 73,
+      "value": "\"Running image tracking on: \""
+    },
+    {
+      "filePath": "\/Users\/sonam.sodani\/Documents\/GitHub-CXApp\/iOS\/visualix-ios\/VisualixFramework\/Controller.swift",
+      "kind": "StringLiteral",
+      "offset": 67096,
+      "length": 4,
+      "value": "\" with sz=\""
+    },
+    {
+      "filePath": "\/Users\/sonam.sodani\/Documents\/GitHub-CXApp\/iOS\/visualix-ios\/VisualixFramework\/Controller.swift",
+      "kind": "StringLiteral",
+      "offset": 67115,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/sonam.sodani\/Documents\/GitHub-CXApp\/iOS\/visualix-ios\/VisualixFramework\/Controller.swift",
+      "kind": "StringLiteral",
+      "offset": 67381,
+      "length": 55,
+      "value": "\"Error: IOS13 required for barcode image localization.\""
+    },
+    {
+      "filePath": "\/Users\/sonam.sodani\/Documents\/GitHub-CXApp\/iOS\/visualix-ios\/VisualixFramework\/Controller.swift",
+      "kind": "StringLiteral",
+      "offset": 68008,
       "length": 4,
       "value": "\"\\\""
     },
     {
       "filePath": "\/Users\/sonam.sodani\/Documents\/GitHub-CXApp\/iOS\/visualix-ios\/VisualixFramework\/Controller.swift",
       "kind": "StringLiteral",
-      "offset": 61546,
+      "offset": 68020,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/sonam.sodani\/Documents\/GitHub-CXApp\/iOS\/visualix-ios\/VisualixFramework\/Controller.swift",
       "kind": "StringLiteral",
-      "offset": 61655,
+      "offset": 68129,
       "length": 48,
       "value": "\"Failed to get barcode string: \""
     },
     {
       "filePath": "\/Users\/sonam.sodani\/Documents\/GitHub-CXApp\/iOS\/visualix-ios\/VisualixFramework\/Controller.swift",
       "kind": "StringLiteral",
-      "offset": 61702,
+      "offset": 68176,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/sonam.sodani\/Documents\/GitHub-CXApp\/iOS\/visualix-ios\/VisualixFramework\/Controller.swift",
       "kind": "FloatLiteral",
-      "offset": 62342,
+      "offset": 68817,
       "length": 4,
       "value": "0.05"
     },
     {
       "filePath": "\/Users\/sonam.sodani\/Documents\/GitHub-CXApp\/iOS\/visualix-ios\/VisualixFramework\/Controller.swift",
       "kind": "FloatLiteral",
-      "offset": 62468,
+      "offset": 68943,
       "length": 3,
       "value": "0.1"
     },
     {
       "filePath": "\/Users\/sonam.sodani\/Documents\/GitHub-CXApp\/iOS\/visualix-ios\/VisualixFramework\/Controller.swift",
       "kind": "IntegerLiteral",
-      "offset": 62501,
+      "offset": 68976,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/sonam.sodani\/Documents\/GitHub-CXApp\/iOS\/visualix-ios\/VisualixFramework\/Controller.swift",
       "kind": "FloatLiteral",
-      "offset": 62534,
+      "offset": 69009,
       "length": 3,
       "value": "0.1"
     },
     {
       "filePath": "\/Users\/sonam.sodani\/Documents\/GitHub-CXApp\/iOS\/visualix-ios\/VisualixFramework\/Controller.swift",
       "kind": "StringLiteral",
-      "offset": 62856,
+      "offset": 69331,
       "length": 68,
       "value": "\"Error: Could not convert barcode content into an ARReferenceImage.\""
     },
     {
       "filePath": "\/Users\/sonam.sodani\/Documents\/GitHub-CXApp\/iOS\/visualix-ios\/VisualixFramework\/Controller.swift",
       "kind": "StringLiteral",
-      "offset": 63938,
+      "offset": 70413,
       "length": 55,
       "value": "\"Error: IOS13 required for barcode image localization.\""
     },
     {
       "filePath": "\/Users\/sonam.sodani\/Documents\/GitHub-CXApp\/iOS\/visualix-ios\/VisualixFramework\/Controller.swift",
       "kind": "IntegerLiteral",
-      "offset": 64546,
+      "offset": 71021,
       "length": 1,
       "value": "2"
     },

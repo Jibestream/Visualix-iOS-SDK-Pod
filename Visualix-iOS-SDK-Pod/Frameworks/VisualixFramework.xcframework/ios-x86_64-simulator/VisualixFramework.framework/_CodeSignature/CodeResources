@@ -18,7 +18,7 @@
 		</data>
 		<key>Headers/VisualixFramework-Swift.h</key>
 		<data>
-		P8ywFSeVOSXXR2qWw5dVYpIjsq8=
+		HLQ+luFgYK2R8jBYeY6OcdrkGSY=
 		</data>
 		<key>Headers/VisualixFramework.h</key>
 		<data>
@@ -34,11 +34,11 @@
 		</data>
 		<key>Modules/VisualixFramework.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		zKa+eUon4ooTLWZlUboHuyraQlg=
+		rtmeTzQiSkak1r0IhI8T+bOxyls=
 		</data>
 		<key>Modules/VisualixFramework.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		Ew1LtJcJCbgnlFGghPdoDB3WSv0=
+		wyj6hX2mUM+VYwoDcmcNjQGaYfw=
 		</data>
 		<key>Modules/VisualixFramework.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -46,11 +46,11 @@
 		</data>
 		<key>Modules/VisualixFramework.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		Ew1LtJcJCbgnlFGghPdoDB3WSv0=
+		wyj6hX2mUM+VYwoDcmcNjQGaYfw=
 		</data>
 		<key>Modules/VisualixFramework.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		4eZFpNjBTFufjkVSUeOnRShcQ6Y=
+		SEikQTlAOGWbta2aSkRLOjhFgJc=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -88,7 +88,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			qEpqWoIE3g8b29iQvD1k8LofiDZbpoTsz4zm9Hav6X0=
+			/WpQKbsIbJFQIGx6UK2IdqBN5DSEfWBW4Je3BZbTi20=
 			</data>
 		</dict>
 		<key>Headers/VisualixFramework.h</key>
@@ -109,14 +109,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			C+zREfmTnqERpI+dknn8uUe+3HeGG22RiemWQ2qwNi0=
+			cpB1NXKu7+i2WAE2diNOXoR9jG7hmO8fj6TKnmEIVXw=
 			</data>
 		</dict>
 		<key>Modules/VisualixFramework.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			ZMe7vJQyXoZ6iTyTvRFQCNQBo35T0lFGhJRUjyg8qu4=
+			hiWM7Y66F2dSSyxi0IOfKUapMe6xhMzC0cOyEGtsIXA=
 			</data>
 		</dict>
 		<key>Modules/VisualixFramework.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
@@ -130,14 +130,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			ZMe7vJQyXoZ6iTyTvRFQCNQBo35T0lFGhJRUjyg8qu4=
+			hiWM7Y66F2dSSyxi0IOfKUapMe6xhMzC0cOyEGtsIXA=
 			</data>
 		</dict>
 		<key>Modules/VisualixFramework.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			OloKCXR5AGcNo5YeNywGFz0YAkc2NNnTtHwlUx3c6Ps=
+			ladUuUdRqBtPM7JD5Uf9F6QydAXkxYje6+0PFpYFstg=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

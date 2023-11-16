@@ -421,6 +421,9 @@ public struct Exception : Foundation.LocalizedError {
   public var onTrajectoryNil: (() -> Swift.Void)?
   public var framesSent: Swift.Int
   public var framesReceived: Swift.Int
+  final public let extensorTextKey: Swift.String
+  final public let extensorHeadingKey: Swift.String
+  final public let extensorTextWidth: Swift.String
   final public let status: VisualixFramework.Status
   public var serverStatus: VisualixFramework.ServerStatus?
   public var onServerStatusUpdate: (() -> Swift.Void)?
@@ -443,6 +446,7 @@ public struct Exception : Foundation.LocalizedError {
   public func onUpdateOrigin(_ transform: SceneKit.SCNMatrix4)
   public func enableBarcodeLocalization(onview: ARKit.ARSCNView?)
   public func enableWallRelocalization(enabled: Swift.Bool)
+  public func enableTextLocalization(enabled: Swift.Bool)
   public func Update(didUpdate: ARKit.ARFrame, translationBased: Swift.Bool, position: SceneKit.SCNVector3, angleInfo: simd.simd_float3)
   public func addCorrectionOffset(offset: SceneKit.SCNVector3)
   public func upload(mapName: Swift.String, _ content: Foundation.Data, _ done: (() -> Swift.Void)?)
