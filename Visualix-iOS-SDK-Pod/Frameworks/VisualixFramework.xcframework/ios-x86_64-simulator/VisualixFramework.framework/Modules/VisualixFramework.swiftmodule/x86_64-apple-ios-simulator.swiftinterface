@@ -1,5 +1,5 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.8.1 (swiftlang-5.8.0.124.5 clang-1403.0.22.11.100)
+// swift-compiler-version: Apple Swift version 5.9 (swiftlang-5.9.0.128.108 clang-1500.0.40.1)
 // swift-module-flags: -target x86_64-apple-ios12.2-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name VisualixFramework
 // swift-module-flags-ignorable: -enable-bare-slash-regex
 import ARKit
@@ -14,6 +14,7 @@ import Vision
 @_exported import VisualixFramework
 import _Concurrency
 import _StringProcessing
+import _SwiftConcurrencyShims
 public class ZeroMQSocket {
   public init(sessionID: Swift.String, mappingEndpoint: Swift.String, queryEndpoint: Swift.String, onError: @escaping ((_ error: any Swift.Error) -> ()))
   @objc deinit
@@ -449,6 +450,7 @@ public struct Exception : Foundation.LocalizedError {
   public func enableTextLocalization(enabled: Swift.Bool)
   public func Update(didUpdate: ARKit.ARFrame, translationBased: Swift.Bool, position: SceneKit.SCNVector3, angleInfo: simd.simd_float3)
   public func addCorrectionOffset(offset: SceneKit.SCNVector3)
+  public func setPosition(position2D: CoreFoundation.CGPoint, heading: CoreFoundation.CGFloat)
   public func upload(mapName: Swift.String, _ content: Foundation.Data, _ done: (() -> Swift.Void)?)
   public func downloadMeta(_ done: ((_ updatedContent: Swift.Bool) -> Swift.Void)?)
   public func saveMap(mapName: Swift.String, done: @escaping (() -> Swift.Void))

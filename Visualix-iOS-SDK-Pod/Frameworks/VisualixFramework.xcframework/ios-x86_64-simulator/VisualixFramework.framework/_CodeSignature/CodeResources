@@ -6,7 +6,7 @@
 	<dict>
 		<key>Assets.scnassets/CameraSetup.scn</key>
 		<data>
-		PTDdksJYfjoJ0wLQVvxvK7gTim0=
+		pFhYiqBcxHcQzcsCBIhwNm3uVGM=
 		</data>
 		<key>Assets.scnassets/pinkdot.png</key>
 		<data>
@@ -18,7 +18,7 @@
 		</data>
 		<key>Headers/VisualixFramework-Swift.h</key>
 		<data>
-		HLQ+luFgYK2R8jBYeY6OcdrkGSY=
+		ZPzpSvYZzlWJ5ZlYg/7Km4nyyiA=
 		</data>
 		<key>Headers/VisualixFramework.h</key>
 		<data>
@@ -30,31 +30,31 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		dDUopFMO/OTosekuOyZwXwNzL84=
+		XZMR9ToIJlEFDTmjljtOf0F93ak=
 		</data>
 		<key>Modules/VisualixFramework.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		rtmeTzQiSkak1r0IhI8T+bOxyls=
+		BZpMH1o/PHHnqsLsF+m5FRpNmGE=
 		</data>
 		<key>Modules/VisualixFramework.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		wyj6hX2mUM+VYwoDcmcNjQGaYfw=
+		uXYLtdh+85qVdlj5nu8krgO551I=
 		</data>
 		<key>Modules/VisualixFramework.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		ufMVOotJ7P8D6eB9qLoV1XdXqh0=
+		E3yYtNw8A9xLbI0P5nM7bCBdNJk=
 		</data>
 		<key>Modules/VisualixFramework.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		wyj6hX2mUM+VYwoDcmcNjQGaYfw=
+		uXYLtdh+85qVdlj5nu8krgO551I=
 		</data>
 		<key>Modules/VisualixFramework.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		SEikQTlAOGWbta2aSkRLOjhFgJc=
+		W0baKWEtQvWAw8njk+lZEn2bHqs=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
-		Vk8nC8VGYg/H+/bUvkxCG3fNybY=
+		ErUV0Pi6N1ODapDqV2eGubiq8S4=
 		</data>
 		<key>arrow.png</key>
 		<data>
@@ -67,7 +67,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			Ic3oahRGtib/yEh76NR0JMZDOqTBdFoHrpDQM1948wI=
+			kjOQGPlHW1rYTwbgEkLIVUQ4F9U1Tu0tZlKAC7PtAOo=
 			</data>
 		</dict>
 		<key>Assets.scnassets/pinkdot.png</key>
@@ -88,7 +88,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			/WpQKbsIbJFQIGx6UK2IdqBN5DSEfWBW4Je3BZbTi20=
+			U6dbaRBqlZCkRCkLfGCoSoYFQdybJGtrE3Nh9DZHmmY=
 			</data>
 		</dict>
 		<key>Headers/VisualixFramework.h</key>
@@ -109,42 +109,42 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			cpB1NXKu7+i2WAE2diNOXoR9jG7hmO8fj6TKnmEIVXw=
+			axULlALCUS+MYpjePQtIpfaKD1ejeQgZsFqubDP1Mb8=
 			</data>
 		</dict>
 		<key>Modules/VisualixFramework.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			hiWM7Y66F2dSSyxi0IOfKUapMe6xhMzC0cOyEGtsIXA=
+			arNqeueCPnrQhrdVIxFQ1P/1ScmF+t/2rAoZgqnklhc=
 			</data>
 		</dict>
 		<key>Modules/VisualixFramework.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			ZQJT4Z30R2v6CTF1EBJAR8St3CfiWztBxiu47oNlpxE=
+			z04SgEXO+qbSzFCoWhUrH0v3GMFf+tQ17qfnebSiDXM=
 			</data>
 		</dict>
 		<key>Modules/VisualixFramework.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			hiWM7Y66F2dSSyxi0IOfKUapMe6xhMzC0cOyEGtsIXA=
+			arNqeueCPnrQhrdVIxFQ1P/1ScmF+t/2rAoZgqnklhc=
 			</data>
 		</dict>
 		<key>Modules/VisualixFramework.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			ladUuUdRqBtPM7JD5Uf9F6QydAXkxYje6+0PFpYFstg=
+			P2sYadjLSWfspD/+zPFLTTiEEI7pkcwY+7XdHuvZspI=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			wUcEsZOD45AK4iZvTMRmbMtGOqZY6A1KHR32aUVhJww=
+			Ws6E3qoUU2hDALEOecBkGM0gR5CCSTxQLW2kNN1gsNM=
 			</data>
 		</dict>
 		<key>arrow.png</key>

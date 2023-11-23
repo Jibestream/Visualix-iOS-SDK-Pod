@@ -1,7 +1,7 @@
 framework module VisualixFramework {
   umbrella header "VisualixFramework.h"
-
   export *
+
   module * { export * }
 }
 
