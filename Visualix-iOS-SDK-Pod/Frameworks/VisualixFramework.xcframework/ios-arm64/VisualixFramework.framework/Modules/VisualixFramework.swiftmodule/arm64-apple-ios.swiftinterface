@@ -246,11 +246,12 @@ public struct GraphItem : Swift.Codable {
   public var x: Swift.Float, y: Swift.Float, z: Swift.Float
   public var rotation: VisualixFramework.Rotation?
   public var id: Swift.String, platform: Swift.String, name: Swift.String
+  public var EID: Swift.String?
   public var isAmenity: Swift.Bool
   public var displayMode: Swift.Int?
   public var image: Swift.String?
   public var extensor: [Swift.String : Swift.String]?
-  public init(x: Swift.Float = 0, y: Swift.Float = 0, z: Swift.Float = 0, rotation: VisualixFramework.Rotation? = nil, id: Swift.String, platform: Swift.String, name: Swift.String, isAmenity: Swift.Bool, displayMode: Swift.Int = 1, image: Swift.String? = nil, extensor: [Swift.String : Swift.String]? = nil)
+  public init(x: Swift.Float = 0, y: Swift.Float = 0, z: Swift.Float = 0, rotation: VisualixFramework.Rotation? = nil, id: Swift.String, EID: Swift.String?, platform: Swift.String, name: Swift.String, isAmenity: Swift.Bool, displayMode: Swift.Int = 1, image: Swift.String? = nil, extensor: [Swift.String : Swift.String]? = nil)
   public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
 }
@@ -276,10 +277,12 @@ public struct Position : Swift.Codable {
 }
 open class QRCodeContent : Swift.Codable {
   public var venueId: Swift.String
+  public var EID: Swift.String?
+  public var ARID: Swift.String?
   public var waypointId: Swift.String
   public var heading: Swift.String
   public var width: Swift.String?
-  public init(venueId: Swift.String, waypointId: Swift.String, heading: Swift.String, width: Swift.String?)
+  public init(venueId: Swift.String, EID: Swift.String?, ARID: Swift.String?, waypointId: Swift.String, heading: Swift.String, width: Swift.String?)
   required public init(from decoder: any Swift.Decoder) throws
   @objc deinit
   open func encode(to encoder: any Swift.Encoder) throws
@@ -458,6 +461,7 @@ public struct Exception : Foundation.LocalizedError {
   public func getSavedMaps(result: @escaping ((Foundation.Data) -> Swift.Void))
   public func deleteMap(mapName: Swift.String, done: @escaping (() -> Swift.Void))
   public func downloadGraphContent(mapName: Swift.String, result: @escaping (Swift.Result<VisualixFramework.Graph, VisualixFramework.VXError>) -> Swift.Void)
+  public func placeContent(graph: VisualixFramework.Graph)
   public func renameMap(newMapName: Swift.String, oldMapName: Swift.String, done: @escaping ((Foundation.Data) -> Swift.Void))
   public func renameInfoPoints(newMapName: Swift.String, oldMapName: Swift.String, result: @escaping ((Foundation.Data) -> Swift.Void))
   public func triggerLocalisation()
